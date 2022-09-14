@@ -232,6 +232,11 @@ main{
     text-align: left;
 }
 
+.contato-mapa{
+    padding: 10px;
+    flex-basis: 100%;
+   margin-left: 200px;
+}
 
 
 
