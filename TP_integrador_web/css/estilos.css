@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*
+    #33658A azul tranca
+    #86BBD8 celeste
+    #2F4858 azul oscuro
+    #F6AE2D amarillo
+    #F26419 naranja*/
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+}
+
+a, button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+}
+
+
+h2, h3{
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    background-color: #f5f5f5;
+}
+
+.header_pagina{
+    display: flex;
+    background-color: #33658A;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2em 4em;
+}
+
+.links_nav{
+    display: flex;
+    list-style: none;
+}
+
+.links_nav li{
+    padding-left: 30px;
+    text-align: center;
+    
+}
+
+.links_nav a{
+    text-decoration: none;
+    color: #7eb9da;
+}
+.links_nav a:hover{
+    color: #2db7ee;
+}
+
+#buscador{
+    width: 40%;
+    height: 25px;
+}
+
+#carrito{
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo_pagina{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.banner button{
+    margin: 150px 10px;
+}
+
+.banner_img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.icono{
+    width: 30px
+}
+
+.icono-facebook{
+    width: 20px
+}
+
+.icono-instagram{
+    width: 20px
+}
+
+.icono-whatsapp{
+    width: 20px
+}
+.categorias_de_productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.categorias_de_productos h2{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.categoria_individual{
+    padding: 10px 40px;
+}
+
+.boton_de_categorias{
+    width: 200px;
+    height: 150px;
+}
+
+.productos_mas_vendidos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos_mas_vendidos h2{
+    padding: 10px 0px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.producto_individual{
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+.info_del_producto{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.info_del_producto button{
+    margin-left: 50px;
+    align-items
+}
+
+.info_del_producto span{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+.info_del_producto input{
+    width: 10%;
+}
+
+.formas_de_pago{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.formas_de_pago h2{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.formas_de_pago button{
+    margin: 40px 10px;
+}
+
+.opcion_de_pago{
+    width: 250px;
+    height: 120px;
+}
+
+.footer_de_pagina{
+    background-color: #33658A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+    text-align: left;
+}
+
+#datos_del_grupo{
+    display: flex;
+    flex-direction: column;
+    word-spacing: 2px;
+}
+
+
+.nombreApellido{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 15px 800px 20px 300px;
+    text-align: left;
+  
+}
+.contacto{
+    padding: 10px;
+    flex-basis: 100%;
+}
+.contacto-titulo{
+    padding: 10px 200px;
+    flex-basis: 100%;
+}
+
+
+.contacto-mensaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+    text-align: left;
+}
+
+
+
+
+

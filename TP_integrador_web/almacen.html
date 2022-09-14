@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TP integrador</title>
+    <title>Almacen</title>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -36,44 +36,15 @@
     </header>
 
     <main>
-      <section>
-        <article>
-          <ul class="banner">
-            <li id="banner_img_1" class="banner_img">
-              <a href="#"><button class="next_prev">&#8249;</button></a>
-              <img src="img/imagen_de_relleno.png" alt="imagen" id="img1" />
-              <a href="#"><button class="next_prev">&#8250;</button></a>
-            </li>
-          </ul>
-        </article>
-      </section>
       <section class="categorias_de_productos">
-        <h2>CATEGORIAS</h2>
-        <article class="categoria_individual">
-          <a href="#">
-            <button class="boton_de_categorias" id="bebidas">Bebidas</button>
-          </a>
-        </article>
-        <article class="categoria_individual">
-          <a href="#">
-            <button class="boton_de_categorias" id="almacen">Almacen</button>
-          </a>
-        </article>
-        <article class="categoria_individual">
-          <a href="#">
-            <button class="boton_de_categorias" id="productos_frescos">
-              Productos frescos
-            </button>
-          </a>
-        </article>
-      </section>
-      <section class="productos_mas_vendidos">
-        <h2>PRODUCTOS MAS VENDIDOS</h2>
+        <h2>ALMACEN</h2>
         <article class="producto_individual">
           <img src="img/imagen_de_relleno.png" alt="imagen del producto" />
           <p class="info_del_producto">
             <span>$111</span> <br />
             Nombre del Producto
+            <label for="cantidad_a_agregar"></label>
+            <input name="cantidad_a_agregar" type="number" min="1" max="100" />
             <button>Agregar al carrito</button>
           </p>
         </article>
@@ -82,6 +53,8 @@
           <p class="info_del_producto">
             <span>$111</span> <br />
             Nombre del Producto
+            <label for="cantidad_a_agregar"></label>
+            <input name="cantidad_a_agregar" type="number" min="1" max="100" />
             <button>Agregar al carrito</button>
           </p>
         </article>
@@ -90,23 +63,12 @@
           <p class="info_del_producto">
             <span>$111</span><br />
             Nombre del Producto
+            <label for="cantidad_a_agregar"></label>
+            <input name="cantidad_a_agregar" type="number" min="1" max="100" />
             <button>Agregar al carrito</button>
           </p>
         </article>
       </section>
-      <aside class="formas_de_pago">
-        <h2>FORMAS DE PAGO</h2>
-        <a href="#"><button class="next_prev">&#8249;</button></a>
-        <img src="img/logo_cabal.png" alt="cabal" class="opcion_de_pago" />
-        <img src="img/logo_maestro.png" alt="maestro" class="opcion_de_pago" />
-        <img
-          src="img/logo_mastercard.png"
-          alt="mastercard"
-          class="opcion_de_pago"
-        />
-        <img src="img/logo_visa.png" alt="visa" class="opcion_de_pago" />
-        <a href="#"><button class="next_prev">&#8250;</button></a>
-      </aside>
     </main>
 
     <footer class="footer_de_pagina">
