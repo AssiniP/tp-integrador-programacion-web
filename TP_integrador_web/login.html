@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Login</title>
+</head>
+<body>
+  
+  <form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img/logo_placeholder_negro.png" alt="Avatar" class="logo">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Usuario</b></label>
+      <input type="text" placeholder="Ingrese el Usuario" name="uname" required>
+  
+      <label for="psw"><b>Constraseña</b></label>
+      <input type="password" placeholder="Ingrese la Constraseña" name="psw" required>
+  
+      <button type="submit">Login</button>
+
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <span class="psw">Olvidaste la <a href="#">contraseña?</a></span> 
+      <span class="registro">No tenes cuenta? <a href="#">registrate.</a></span>
+    </div>
+  </form>
+
+</body>
+</html>
