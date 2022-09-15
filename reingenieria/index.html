@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP integrador</title>
+    <link rel="stylesheet" href="css/comun.css" />
+    <link rel="stylesheet" href="css/productos.css" />
+  </head>
+  <body>
+    <header class="header_pagina">
+      <a href="index.html" id="logo_pagina"><img src="img/logo_empresa.png" alt="logo de la pagina" class=logo-empresa  /></a>
+      <label for="buscador"></label>
+      <input  type="search" id="buscador" name="buscador"  placeholder="Buscador" />
+      <a href="carrito.html" id="carrito" ><img src="img/carrito_de_compras_negro.svg" alt="carrito de compras" /></a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="contacto.html" > Contacto</a></li>
+        <li><a href="miCuenta.html" >Mi cuenta</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <article>
+          <ul class="banner">
+            <li id="banner_img_1" class="banner_img">
+              <a href="#"><button class="next_prev">&#8249;</button></a>
+              <img src="img/imagen_de_relleno.png" alt="imagen" id="img1" />
+              <a href="#"><button class="next_prev">&#8250;</button></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="categorias_de_productos">
+        <h2>CATEGORIAS</h2>
+        <article class="categoria_individual">
+          <a href="#">
+            <button class="boton_de_categorias" id="bebidas">Bebidas</button>
+          </a>
+        </article>
+        <article class="categoria_individual">
+          <a href="#">
+            <button class="boton_de_categorias" id="almacen">Almacen</button>
+          </a>
+        </article>
+        <article class="categoria_individual">
+          <a href="#">
+            <button class="boton_de_categorias" id="productos_frescos">
+              Productos frescos
+            </button>
+          </a>
+        </article>
+      </section>
+      <section class="productos_mas_vendidos">
+        <h2>PRODUCTOS MAS VENDIDOS</h2>
+        <article class="producto_individual">
+          <img src="img/imagen_de_relleno.png" alt="imagen del producto" />
+          <p class="info_del_producto">
+            <span>$111</span> <br />
+            Nombre del Producto
+            <button>Agregar al carrito</button>
+          </p>
+        </article>
+        <article class="producto_individual">
+          <img src="img/imagen_de_relleno.png" alt="imagen del producto" />
+          <p class="info_del_producto">
+            <span>$111</span> <br />
+            Nombre del Producto
+            <button>Agregar al carrito</button>
+          </p>
+        </article>
+        <article class="producto_individual">
+          <img src="img/imagen_de_relleno.png" alt="imagen del producto" />
+          <p class="info_del_producto">
+            <span>$111</span><br />
+            Nombre del Producto
+            <button>Agregar al carrito</button>
+          </p>
+        </article>
+      </section>
+      <aside class="formas_de_pago">
+        <h2>FORMAS DE PAGO</h2>
+        <a href="#"><button class="next_prev">&#8249;</button></a>
+        <img src="img/logo_cabal.png" alt="cabal" class="opcion_de_pago" />
+        <img src="img/logo_maestro.png" alt="maestro" class="opcion_de_pago" />
+        <img src="img/logo_mastercard.png" alt="mastercard" class="opcion_de_pago"/>
+        <img src="img/logo_visa.png" alt="visa" class="opcion_de_pago" />
+        <a href="#"><button class="next_prev">&#8250;</button></a>
+      </aside>
+    </main>
+
+    <footer class="footer_de_pagina">
+      <div id="info_tienda">
+        <img src="img/logo_empresa.png" alt="logo" class="logo-footer" />
+        <p> ⌚ Lunes a Sabados</p>
+        <p>de 8 a 14hs. y de 16 a 20hs.</p>
+      </div>
+      <div id="datos_del_grupo">
+        <h3>Datos del Grupo</h3>
+        <p>43722603 - Assini, Paula Valentina</p>
+        <p>29363691 - Manrique, Mariela Noemi</p>
+        <p>23891669 - Sandoval, Patricia Lorena</p>
+      </div>
+      <div id="redes_sociales">
+          <p>Seguinos en</p>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="img/instagram.png" alt="instagram" class="icono" /></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="img/facebook.png" alt="facebook" class="icono" /></a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+           <img src="img/whatsapp.png" alt="whatsapp" class="icono" /></a>
+        <a href="https://github.com/AssiniP/tp-integrador-programacion-web/tree/master"
+          target="_blank"><img src="img/icono_github.svg" alt="github" class="icono" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

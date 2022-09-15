@@ -1,0 +1,99 @@
+
+.nombreApellido{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  
+}
+form{
+   position: relative;
+}
+.micuenta-tabla{
+    justify-content:center;
+}
+/* Tabla */
+/* Responsive Table Reset */
+[data-table] {
+    font-size: 12pt;
+    width: 100%;
+  }
+  @element [data-table] and (max-width: 500px) {
+    $this,
+    $this caption,
+    $this thead,
+    $this tbody,
+    $this tfoot,
+    $this tr,
+    $this th,
+    $this td {
+      display: block;
+      width: 100%;
+    }
+  }
+  @element [data-table] and (min-width: 500px) {
+    $this { display: table; width: 100%; }
+    $this caption { display: table-caption; width: auto; }
+    $this thead { display: table-header-group; width: auto; }
+    $this tbody { display: table-row-group; width: auto; }
+    $this tfoot { display: table-footer-group; width: auto; }
+    $this tr { display: table-row; width: auto; }
+    $this th,
+    $this td { display: table-cell; width: auto; }
+  }
+  
+  /* Default Table Theme */
+  @element [data-table] {
+    $this {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 1em 0;
+      color: #333;
+      border-collapse: collapse;
+    }
+    $this thead th,
+    $this tfoot th {
+      color: #777;
+      background: rgba(0,0,0,.1);
+    }
+    $this caption {
+      padding: .5em;
+    }
+    $this th,
+    $this td {
+      padding: .5em;
+      background: white;
+      border: 1px solid #aaa;
+    }
+    $this tbody tr:nth-of-type(even) {
+      background: rgba(0,0,0,.05);
+    }
+  }
+
+
+
+ .micuenta-tabla{
+    padding: 20px;
+}
+  
+  table, th, td {
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+table {
+	border-collapse: collapse;
+	width: 500px;
+	text-align: center;
+}
+
+th, td {
+	padding:10px 20px;
+}
+
+th {
+	background: #832199;
+	color: #fff;
+}
+
+tr:hover {
+	background: #e5e5e5;
+}

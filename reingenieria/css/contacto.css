@@ -1,0 +1,79 @@
+.contacto{
+    padding: 10px;
+    flex-basis: 100%;
+}
+.contacto-titulo{
+    padding: 10px 200px;
+    flex-basis: 100%;
+}
+
+
+.contacto-mensaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+    text-align: left;
+}
+
+.contato-mapa{
+    padding: 10px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+ /* formulario*/
+ .formulario {
+	background:  #a064ae;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+	width: 600px;
+}
+
+.formulario input {
+	display: block;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border:1px solid #000000;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+.formulario textarea {
+	min-height: 120px;
+	max-height: 300px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+	border:2px solid #000000;
+}
+
+.formulario input[type="submit"] {
+	width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	border:1px solid #000000;
+	color: #000000;
+	background: none;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.formulario input[type="submit"]:hover {
+	background: #832199;
+	color: #fff;
+}
+  
