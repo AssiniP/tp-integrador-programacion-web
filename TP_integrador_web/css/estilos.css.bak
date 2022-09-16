@@ -89,7 +89,7 @@ main{
 }
 
 .icono{
-    width: 40px
+    width: 30px
 }
 
 .icono-facebook{
