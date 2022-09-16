@@ -5,7 +5,7 @@
     padding: 0;
 }
 main{
-    background-color: #f5f5f5;
+    background-color: #fbf0dc;
 }
 h2, h3{
     font-family: 'Manrope', sans-serif;
@@ -20,7 +20,7 @@ p{
 }
 .header_pagina{
     display: flex;
-    background-color: #a064ae;
+    background-color: #85def2;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ p{
     height: 40px;
 }
 nav{
-   background-color: #a064ae;
+   background-color:  #85def2;
 }
 nav a{
     text-decoration:none;
@@ -41,12 +41,12 @@ nav li{
     display:inline-block;
     width:24%;
     padding:5px 10px;
-    background-color: #a064ae;
+    background-color: #85def2;
     border:2px solid #000;
     text-align:center;
 }
 nav li:hover{
-    background-color:  #832199;
+    background-color:  #b1a7f2;
 }
 nav a:hover{
     color:blue;
@@ -55,7 +55,7 @@ nav a:hover{
     
 footer{
     display: flex;
-    background-color: #a064ae;
+    background-color: #85def2;
     flex-direction: row;
     justify-content:space-between;
     align-items:center;

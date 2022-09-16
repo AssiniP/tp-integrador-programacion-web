@@ -17,10 +17,11 @@
 .categorias_de_productos{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 0px;
+    flex-direction: rows;
+    justify-content: space-between;
+    bottom: 10%;
 }
+
 
 .categorias_de_productos h2{
     flex-basis: 100%;
@@ -51,9 +52,12 @@
 
 
 .producto_individual{
-    position: relative;
-    display: flex;
-    padding: 10px;
+    vertical-align: top;
+    width: 400px;
+    margin: 20px;
+    padding: 5px;
+    border: transparent;
+    text-align: center;
 }
 
 .info_del_producto{
@@ -96,3 +100,19 @@
     width: 200;
     height: 80px;
 }
+.imagen-producto{
+    width: 300px;
+}
+
+.link-producto{
+   
+    position: relative;
+    z-index: 200;
+    bottom: 140px;
+    right: 180px;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
