@@ -1,0 +1,135 @@
+
+/* Banner */
+.banner{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.banner button{
+    margin: 150px 10px;
+}
+
+.banner_img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.categorias_de_productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 10%;
+}
+
+
+.categorias_de_productos h2{
+   flex-basis: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+/*  Contenedor producto_individual"*/
+.producto_individual{
+    vertical-align: top;
+    width: 400px;
+    padding: 5px;
+    border: transparent;
+    position: relative;
+}
+.producto_individual a{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 200;
+    bottom: 140px;
+    right: 200px;
+}
+.imagen-producto{
+    width: 300px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.boton_de_categorias{
+    width: 200px;
+    height: 150px;
+}
+
+/*  Contenedor producto_mas_vendidos*/
+.productos_mas_vendidos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.productos_mas_vendidos h2{
+    padding: 10px 10px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.producto_individual_mas_vendidos{
+    vertical-align: top;
+    width: 400px;
+    border: transparent;
+}
+
+.info_del_producto{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.info_del_producto button{
+    margin-left: 50px;
+    align-items
+}
+
+.info_del_producto span{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+.info_del_producto input{
+    width: 10%;
+}
+
+
+
+
+.formas_de_pago{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.formas_de_pago h2{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.formas_de_pago button{
+    margin: 40px 10px;
+}
+
+.opcion_de_pago{
+    width: 200;
+    height: 80px;
+}
+
+
+#img1{
+    width:200px;
+    height:200px;
+    margin-top: 5%;
+
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comun.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Mis Direcciones</title>
+</head>
+<body>
+<main>
+    <form class="formularioLogin" action="" method="post">
+        <h2>Nueva direccion</h2>
+        <span class="material-icons">home</span>
+        <p class="loginOrdenado">Alias:</p>
+        <input type="text" name="alias" placeholder="Alias" value="">
+        <br>
+        <label for="provincia">Provincia</label>
+        <select id="provincia" name="provincia">
+            <option value="0">-- seleccionar --</option>
+            <option value="1">BUENOS AIRES</option>
+            <option value="2">CATAMARCA</option>
+            <option value="5">CHACO</option>
+            <option value="6">CHUBUT</option>
+            <option value="50">CIUDAD AUTONOMA DE Bs As</option>
+            <option value="3">CORDOBA</option>
+            <option value="4">CORRIENTES</option>
+            <option value="7">ENTRE RIOS</option>
+            <option value="8">FORMOSA</option>
+            <option value="9">JUJUY</option>
+            <option value="10">LA PAMPA</option>
+            <option value="11">LA RIOJA</option>
+            <option value="12">MENDOZA</option>
+            <option value="13">MISIONES</option>
+            <option value="14">NEUQUEN</option>
+            <option value="15">RIO NEGRO</option>
+            <option value="16">SALTA</option>
+            <option value="17">SAN LUIS</option>
+            <option value="19">SANTA CRUZ</option>
+            <option value="20">SANTA FE</option>
+            <option value="21">SANTIAGO DEL ESTERO</option>
+            <option value="22">TIERRA DEL FUEGO</option>
+        </select>
+        <br>
+        <label for="localidad">Localidad</label>
+        <select id="localidad" name="localidad">
+            <option value="1">-- seleccionar --</option>
+            <option value="2">San Martin</option>
+            <option value="3">Morón</option>
+            <option value="4">Merlo</option>
+        </select>
+        <br>
+        <p class="loginOrdenado">Direccion:</p>
+        <input type="text" name="direccion" placeholder="Direccion" value="">
+        <br>
+        <p class="loginOrdenado">Telefono:</p>
+        <input type="text" name="telefono" placeholder="Telefono" value="">
+        <br>
+        <p class="loginOrdenado">Piso:</p>
+        <input type="text" name="piso" placeholder="Piso" value="" class="pisoDto">
+        <p class="loginOrdenado pisoDto">Dto:</p>
+        <input type="text" name="dto" placeholder="Dto" value="" class="pisoDto">
+        <article class="containe-button">
+            <button type="submit" class="containe-button">Guardar</button>
+        </article>
+        
+    </form>
+</main>
+</body>
+</html>

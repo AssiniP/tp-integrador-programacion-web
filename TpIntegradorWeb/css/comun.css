@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Open+Sans:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #fbf0dc;
+}
+h2, h3{
+    font-family: 'Manrope', sans-serif;
+}
+a, button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+}
+.header_pagina{
+    display: flex;
+    background-color: #85def2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+}
+#buscador{
+    width: 80%;
+    height: 40px;
+}
+nav{
+   background-color:  #85def2;
+}
+nav a{
+    text-decoration:none;
+    color: #000;
+    } 
+nav li{
+    display:inline-block;
+    width:24%;
+    padding:5px 10px;
+    background-color: #85def2;
+    border:2px solid #000;
+    text-align:center;
+}
+nav li:hover{
+    background-color:  #b1a7f2;
+}
+nav a:hover{
+    color:blue;
+}
+
+    
+footer{
+    display: flex;
+    background-color: #85def2;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    padding: 1em 5em;
+}
+.logo-empresa{
+    width: 150px;
+}
+.logo-footer{
+    width: 80px;
+}
+.icono{
+    width: 30px;
+
+}
+#carrito{
+    width: 50px;
+}
