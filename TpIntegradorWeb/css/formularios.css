@@ -27,6 +27,18 @@ button  {
 	font-size: 16px;
 }
 
+.containe-button a{
+	border-radius: 3px;
+	width: 200px;
+	margin: 0 auto;
+	padding: 10px;
+	border:1px solid #000000;
+	color: #000000;
+	font-size: 16px;
+	font-style: normal;
+  }
+
+  
 .containe-button{
   text-align: center;
 }
@@ -46,4 +58,13 @@ button:hover {
 .container {
   padding: 16px;
 }
+
+.datostarjeta{
+	display: flex;
+	flex-direction: row;
+	flex-basis:inherit;
+
+	padding: 10px 200px;
+}
+
 

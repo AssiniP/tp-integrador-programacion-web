@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/comun.css" />
   <link rel="stylesheet" href="css/formularios.css">
-  <title>Login</title>
+  <title>Nuevo Usuario</title>
 </head>
 <body>
   
@@ -16,20 +16,23 @@
     </article>
 
     <article class="container">
-      <label for="uname"><b>Usuario</b></label>
-      <input type="text" placeholder="Ingrese el Usuario" name="uname" required>
+
+
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Ingrese el Email" name="uname" required>
+      <label for="uname"><b>Nombre</b></label>
+      <input type="text" placeholder="Ingrese el Nombre" name="uname" required>
+      <label for="uname"><b>Apellido</b></label>
+      <input type="text" placeholder="Ingrese el Apellido" name="uname" required>
       <label for="psw"><b>Constraseña</b></label>
+      <input type="password" placeholder="Ingrese la Constraseña" name="psw" required>
+      <label for="psw"><b>Repetir Constraseña</b></label>
       <input type="password" placeholder="Ingrese la Constraseña" name="psw" required>
     </article>
     <article class="containe-button">
-      <button type="submit">Login</button>
-    </article>
-  
-    <article class="container" >
-      <span class="psw">Olvidaste la <a href="#">contraseña?</a></span> 
-      <span class="registro">No tenes cuenta? <a href="crearusuario.html">registrate.</a></span>
-      
-    </article>
+      <article class="containe-button">
+        <a href="login.html" >Cancelar</a>
+        <a href="login.html" >Guardar</a>
   </form>
 
 </body>
