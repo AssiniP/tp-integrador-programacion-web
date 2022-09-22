@@ -4,37 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Maba Bazar</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
   </head>
   <body>
     <header class="header_pagina">
-      <a href="index.html" id="logo_pagina"><img src="img/logo_empresa.png" alt="logo de la pagina" class=logo-empresa  /></a>
+      <a href="index.html" id="logo_pagina"
+        ><img
+          src="img/logo_empresa.png"
+          alt="logo de la pagina"
+          class="logo-empresa"
+      /></a>
       <label for="buscador"></label>
-      <input  type="search" id="buscador" name="buscador"  placeholder="Buscador" />
-      <a href="carrito.html" id="carrito" ><img src="img/carrito_de_compras_negro.svg" alt="carrito de compras" /></a>
+      <input
+        type="search"
+        id="buscador"
+        name="buscador"
+        placeholder="Buscador"
+      />
+      <a href="carrito.html" id="carrito"
+        ><span class="icon-carrito_de_compras_negro"></span
+      ></a>
     </header>
     <nav>
       <ul>
-        <li><a href="index.html" >Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="categorias.html">Categorias</a></li>
-        <li><a href="contacto.html" > Contacto</a></li>
-        <li><a href="miCuenta.html" >Mi cuenta</a></li>
+        <li><a href="contacto.html"> Contacto</a></li>
+        <li><a href="miCuenta.html">Mi cuenta</a></li>
       </ul>
     </nav>
     <main>
       <section>
         <article>
           <ul class="banner">
-            <li id="banner_img_1" class="banner_img">
-              <a href="#"><button class="next_prev">&#8249;</button></a>
-              <img src="img/cateNuevo/Cocina.JPG" alt="imagen" id="img1" />
-              <img src="img/CocinaN/miniPicador.JPG" alt="imagen" id="img1" />
-              <img src="img/CocinaN/tapasSilicona.JPG" alt="imagen" id="img1" />
-              <img src="img/CocinaN/colgsnteEstante.jpg" alt="imagen" id="img1" />
-              <img src="img/CocinaN/sellas.jpg" alt="imagen" id="img1" />
-              <a href="#"><button class="next_prev">&#8250;</button></a>
+            <li id="banner_img_1" class="banner">
+              <a href="#" class="flecha"
+                ><span class="icon-flecha_izq"></span
+              ></a>
+              <img
+                src="img/cateNuevo/Cocina.JPG"
+                alt="imagen"
+                class="banner_img"
+              />
+              <img
+                src="img/CocinaN/miniPicador.JPG"
+                alt="imagen"
+                class="banner_img"
+              />
+              <img
+                src="img/CocinaN/tapasSilicona.JPG"
+                alt="imagen"
+                class="banner_img"
+              />
+              <img
+                src="img/CocinaN/colgsnteEstante.jpg"
+                alt="imagen"
+                class="banner_img"
+              />
+              <img
+                src="img/CocinaN/sellas.jpg"
+                alt="imagen"
+                class="banner_img"
+              />
+              <a href="#" class="flecha"
+                ><span class="icon-flecha_der"></span
+              ></a>
             </li>
           </ul>
         </article>
@@ -42,64 +78,129 @@
       <section class="categorias_de_productos">
         <h2>CATEGORIAS</h2>
         <article class="producto_individual">
-          <img src="img/cateNuevo/Baño.jpg" alt="imagen del producto" class="imagen-producto" />
-          <a href="bano.html" target="_blank" class="link-producto" >Baño</a> 
+          <img
+            src="img/cateNuevo/Baño.jpg"
+            alt="imagen del producto"
+            class="imagen-producto"
+          />
+          <a href="bano.html" target="_blank" class="link-producto">Baño</a>
         </article>
         <article class="producto_individual">
-          <img src="img/cateNuevo/Cocina.JPG " alt="imagen del producto" class="imagen-producto" />
-          <a href="bano.html" target="_blank" class="link-producto">Cocina</a> 
+          <img
+            src="img/cateNuevo/Cocina.JPG "
+            alt="imagen del producto"
+            class="imagen-producto"
+          />
+          <a href="bano.html" target="_blank" class="link-producto">Cocina</a>
         </article>
         <article class="producto_individual">
-          <img src="img/cateNuevo/DecoHogar.JPG" alt="imagen del producto" class="imagen-producto" />
-          <a href="bano.html" target="_blank" class="link-producto">Hogar</a> 
+          <img
+            src="img/cateNuevo/DecoHogar.JPG"
+            alt="imagen del producto"
+            class="imagen-producto"
+          />
+          <a href="bano.html" target="_blank" class="link-producto">Hogar</a>
         </article>
       </section>
 
       <section class="productos_mas_vendidos">
         <h2>PRODUCTOS MAS VENDIDOS</h2>
-        <article  class="producto_individual_mas_vendidos" >
-          <img src="img/CocinaN/grifo.png" alt="imagen del producto" class="imagen-producto" />
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/CocinaN/grifo.png"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
+          <p class="precio_del_producto">$ 1000.0-</p>
+          <p class="info_del_producto">
+            Grifo Zarpado
+            <span
+              class="icon-carrito_de_compras_negro boton_del_carrito"
+            ></span>
+          </p>
         </article>
-        <article  class="producto_individual_mas_vendidos"> 
-          <img src="img/cateNuevo/Infusores.jpg" alt="imagen del producto" class="imagen-producto"/>
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/cateNuevo/Infusores.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
+          <p class="precio_del_producto">$ 650.0-</p>
+          <p class="info_del_producto">
+            Hombres en jacuzzi
+            <span
+              class="icon-carrito_de_compras_negro boton_del_carrito"
+            ></span>
+          </p>
         </article>
-        <article  class="producto_individual_mas_vendidos">
-          <img src="img/CocinaN/secaplato.JPG" alt="imagen del producto" class="imagen-producto"/>
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/CocinaN/secaplato.JPG"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
+
+          <p class="precio_del_producto">$ 2500.0-</p>
+          <p class="info_del_producto">
+            Secaplatos
+            <span
+              class="icon-carrito_de_compras_negro boton_del_carrito"
+            ></span>
+          </p>
         </article>
       </section>
+
       <aside class="formas_de_pago">
         <h2>FORMAS DE PAGO</h2>
-        <a href="#"><button class="next_prev">&#8249;</button></a>
+        <a href="#" class="flecha"><span class="icon-flecha_izq"></span></a>
         <img src="img/logo_cabal.png" alt="cabal" class="opcion_de_pago" />
         <img src="img/logo_maestro.png" alt="maestro" class="opcion_de_pago" />
-        <img src="img/logo_mastercard.png" alt="mastercard" class="opcion_de_pago"/>
+        <img
+          src="img/logo_mastercard.png"
+          alt="mastercard"
+          class="opcion_de_pago"
+        />
         <img src="img/logo_visa.png" alt="visa" class="opcion_de_pago" />
-        <a href="#"><button class="next_prev">&#8250;</button></a>
+        <a href="#" class="flecha"><span class="icon-flecha_der"></span></a>
       </aside>
     </main>
 
     <footer class="footer_de_pagina">
       <div id="info_tienda">
         <img src="img/logo_empresa.png" alt="logo" class="logo-footer" />
-        <p> ⌚ Lunes a Sabado</p>
+        <p><span class="icon-reloj"></span> Lunes a Sabado</p>
         <p>de 8 a 14hs. y de 16 a 20hs.</p>
       </div>
       <div id="datos_del_grupo">
         <h3>Datos del Grupo</h3>
-        <p>43722603 - Assini, Paula Valentina</p>
-        <p>29363691 - Manrique, Mariela Noemi</p>
-        <p>23891669 - Sandoval, Patricia Lorena</p>
+        <p>
+          43722603 - Assini, Paula Valentina <br />
+          29363691 - Manrique, Mariela Noemi <br />
+          23891669 - Sandoval, Patricia Lorena
+        </p>
       </div>
       <div id="redes_sociales">
-          <p>Seguinos en</p>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="img/instagram.png" alt="instagram" class="icono" /></a>
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="img/facebook.png" alt="facebook" class="icono" /></a>
-          <a href="https://web.whatsapp.com/" target="_blank">
-           <img src="img/whatsapp.png" alt="whatsapp" class="icono" /></a>
-        <a href="https://github.com/AssiniP/tp-integrador-programacion-web/tree/master"
-          target="_blank"><img src="img/icono_github.svg" alt="github" class="icono" />
+        <p>Seguinos en</p>
+        <a href="https://www.instagram.com/" target="_blank" class="icono">
+          <span class="icon-icono_instagram"></span
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank" class="icono">
+          <span class="icon-facebook2"></span
+        ></a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="icono">
+          <span class="icon-whatsapp"></span
+        ></a>
+        <a
+          href="https://github.com/AssiniP/tp-integrador-programacion-web/tree/master"
+          target="_blank"
+          class="icono"
+          ><span class="icon-icono_github"></span>
         </a>
       </div>
     </footer>
