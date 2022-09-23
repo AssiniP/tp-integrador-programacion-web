@@ -37,66 +37,182 @@
     </nav>
 
     <main>
-      <section>
+      <section class="micuenta-tabla">
         <article class="nombreApellido">
-          <img src="img/descarga.jfif" alt="foto-house" />
+          <img id="imagen-cuenta" src="img/descarga.jfif" alt="foto-house" />
           <h2>Gregory House</h2>
         </article>
       </section>
-      <form class="formularioLogin">
-        <section class="micuenta-tabla">
-          <article class="containe-button">
-            <h3>Mis Direcciones</h3>
-            <a href="misdirecciones.html" >Agregar</a>
-          </article>
 
-          <article class="contenedor-tabla">
-            <table>
-              <tr>
-                <th>Alias</th>
-                <th>Direccion</th>
-                <th>Eliminar</th>
-              </tr>
+      <section class="micuenta-tabla">
+        <article class="containe-button">
+          <h3>Mis Direcciones</h3>
+          <a href="misdirecciones.html">Agregar</a>
+        </article>
+        <article class="contenedor-tabla">
+          <table>
+            <tr>
+              <th>Alias</th>
+              <th>Direccion</th>
+              <th>Eliminar</th>
+            </tr>
 
-              <tr>
-                <td>Mi depto</td>
-                <td>Varela</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
+            <tr>
+              <td>Mi depto</td>
+              <td>Varela</td>
+              <td><span class="icon-bin"></span></td>
+            </tr>
 
-              <tr>
-                <td>Casa de Mama</td>
-                <td>Villegas</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-            </table>
-          </article>
-        </section>
+            <tr>
+              <td>Casa de Mama</td>
+              <td>Villegas</td>
+              <td><span class="icon-bin"></span></td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <div class="popup-form">
+        <form class="formularioLogin" action="" method="post">
+          <h2>Nueva direccion <span class="icon-home"></span></h2>
+          <p class="loginOrdenado">Alias:</p>
+          <input type="text" name="alias" placeholder="Alias" value="" />
+          <br />
+          <label for="provincia">Provincia</label>
+          <select id="provincia" name="provincia">
+            <option value="0">-- seleccionar --</option>
+            <option value="1">BUENOS AIRES</option>
+            <option value="2">CATAMARCA</option>
+            <option value="5">CHACO</option>
+            <option value="6">CHUBUT</option>
+            <option value="50">CIUDAD AUTONOMA DE Bs As</option>
+            <option value="3">CORDOBA</option>
+            <option value="4">CORRIENTES</option>
+            <option value="7">ENTRE RIOS</option>
+            <option value="8">FORMOSA</option>
+            <option value="9">JUJUY</option>
+            <option value="10">LA PAMPA</option>
+            <option value="11">LA RIOJA</option>
+            <option value="12">MENDOZA</option>
+            <option value="13">MISIONES</option>
+            <option value="14">NEUQUEN</option>
+            <option value="15">RIO NEGRO</option>
+            <option value="16">SALTA</option>
+            <option value="17">SAN LUIS</option>
+            <option value="19">SANTA CRUZ</option>
+            <option value="20">SANTA FE</option>
+            <option value="21">SANTIAGO DEL ESTERO</option>
+            <option value="22">TIERRA DEL FUEGO</option>
+          </select>
+          <br />
+          <label for="localidad">Localidad</label>
+          <select id="localidad" name="localidad">
+            <option value="1">-- seleccionar --</option>
+            <option value="2">San Martin</option>
+            <option value="3">Morón</option>
+            <option value="4">Merlo</option>
+          </select>
+          <br />
+          <p class="loginOrdenado">Direccion:</p>
+          <input
+            type="text"
+            name="direccion"
+            placeholder="Direccion"
+            value=""
+          />
+          <br />
+          <p class="loginOrdenado">Telefono:</p>
+          <input type="text" name="telefono" placeholder="Telefono" value="" />
+          <br />
+          <p class="loginOrdenado">Piso:</p>
+          <input
+            type="text"
+            name="piso"
+            placeholder="Piso"
+            value=""
+            class="pisoDto"
+          />
+          <p class="loginOrdenado pisoDto">Dto:</p>
+          <input
+            type="text"
+            name="dto"
+            placeholder="Dto"
+            value=""
+            class="pisoDto"
+          />
+          <div class="popup-button">
+            <a href="miCuenta.html">Guardar</a>
+          </div>
+        </form>
+      </div>
 
-        <section class="micuenta-tabla">
-          <article class="containe-button">
-            <h3>Metodos de Pago</h3>
-            <a href="nuevatarjeta.html">Agregar</a>
+      <section class="micuenta-tabla">
+        <article class="containe-button">
+          <h3>Metodos de Pago</h3>
+          <a href="nuevatarjeta.html">Agregar</a>
+        </article>
+        <article class="contenedor-tabla">
+          <table>
+            <tr>
+              <th>Alias</th>
+              <th>Eliminar</th>
+            </tr>
+            <tr>
+              <td>Debito Visa</td>
+              <td><span class="icon-bin"></span></td>
+            </tr>
+            <tr>
+              <td>Lemon Cash</td>
+              <td><span class="icon-bin"></span></td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <div class="popup-form">
+        <form class="formularioLogin" action="" method="post">
+          <h2>Nueva Tarjeta <span class="icon-billete_negro"></span></h2>
+          <p class="loginOrdenado">Alias:</p>
+          <input type="text" name="alias" placeholder="Alias" value="" />
+          <p class="loginOrdenado">Numero de Tarjeta:</p>
+          <input
+            type="text"
+            name="nroTarjeta"
+            placeholder="Numero de Tarjeta"
+            value=""
+          />
 
-          </article>
-          <article class="contenedor-tabla">
-            <table>
-              <tr>
-                <th>Alias</th>
-                <th>Eliminar</th>
-              </tr>
-              <tr>
-                <td>Debito Visa</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Lemon Cash</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-            </table>
-          </article>
-        </section>
-      </form>
+          <div class="datostarjeta">
+            <p class="loginOrdenado">Codigo:</p>
+            <input
+              type="text"
+              name="codigo"
+              placeholder="Cdo"
+              value=""
+              class="codigoSeguridad"
+            />
+            <p class="loginOrdenado">Vencimiento:</p>
+            <input
+              type="text"
+              name="vto"
+              placeholder="Vto"
+              value=""
+              class="Vencimiento"
+            />
+          </div>
+
+          <p class="loginOrdenado">Nombre Titular:</p>
+          <input
+            type="text"
+            name="nomtitular"
+            placeholder="Nombre Titular"
+            value=""
+            class="nomDeTitular"
+          />
+
+          <div class="popup-button">
+            <a href="miCuenta.html">Guardar</a>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="footer_de_pagina">
       <div id="info_tienda">

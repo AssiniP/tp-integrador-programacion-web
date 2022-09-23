@@ -1,51 +1,62 @@
 
-form {
-	padding: 20px;
-	border-radius: 5px;
-  width: 50%;  
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-
-
-.containe-button{
-  text-align: center;
-}
-
-.containe-button a{
-	border-radius: 3px;
-	width: 200px;
-	margin: 0 auto;
-	padding: 10px;
-	border:1px solid #000000;
-	color: #000000;
-	font-size: 16px;
-	font-style: normal;
-  }
-
 /* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
 
 .nombreApellido{
-
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    padding: 10px 200px;
-  
+    justify-content: space-around;
+    padding: 10px 20px;
 }
+
+.nombreApellido h2{
+	height: 50px;
+	align-self:center;
+}
+
+#imagen-cuenta{
+	padding-right: 25px;
+}
+
 
 /* Tabla */ 
 /* Responsive Table Reset */
  .micuenta-tabla{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
     padding: 20px;
     font-size: 12pt;
  }
+
+ .containe-button{
+	flex-basis: 100%;
+	width: 650px;
+	position: relative;
+	padding:30px;
+  }
+
+  .containe-button h3{
+	position: absolute;
+	text-align: center;
+	left: 320px;
+	bottom: 10px;
+  }
+
+  .containe-button a{
+	border-radius: 3px;
+	padding: 10px;
+	border:1px solid #000000;
+	color: #000000;
+	font-size: 16px;
+	font-style: normal;
+	position: absolute;
+	right: 320px;
+	bottom: 10px;
+  }
   
 table, th, td {
 	border: 1px solid rgba(0,0,0,.2);
@@ -53,7 +64,8 @@ table, th, td {
 
 table {
 	border-collapse: collapse;
-	width: 550px;
+	width: 750px;
+	height: 200px;
 }
 
 th, td {
@@ -70,10 +82,46 @@ tr:hover {
 	background: #e5e5e5;
 }
 
-.containe-button{
-  display: flex;
-  flex-direction: row;
+.popup-form{
+	display: flex;
+	flex-direction: column;
+	background-color: #f7b697;
+	border-style: dotted;
+	border-radius: 5px;
+	max-width: 400px;
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: none;
 }
-.containe-button button{
-   align-items: flex-end;
+
+.popup-form input{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0px;
+	background-color: #f3ded4;
+	border-radius: 2px;
 }
+
+form {
+	border-radius: 5px;
+}
+
+.popup-button{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+}
+
+.popup-button a{
+	border-radius: 3px;
+	padding: 10px 5px;
+	border:1px solid #000000;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+	font-style: normal;
+	text-align: center;
+  }
