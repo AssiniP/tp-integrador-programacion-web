@@ -1,10 +1,41 @@
 /* Bordered form */
 form {
-	background: #f2d5a0;
+	/*background: #f2d5a0;
 	margin: 20px auto;
 	padding: 20px;
 	border-radius: 5px;
-  width: 50%;
+  width: 50%;*/
+}
+
+/* formulario*/
+.formulario {
+	background:  #f2d5a0;
+	padding: 20px;
+	border-radius: 5px;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+ .container-usuario{
+	background:  #ffc290;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+	padding: 15px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+ }
+
+ .container-usuario input{
+	width: 70%;
+ }
+
+.formulario input {
+	display: block;
 }
 
 /* Full-width inputs */
@@ -62,9 +93,57 @@ button:hover {
 .datostarjeta{
 	display: flex;
 	flex-direction: row;
-	flex-basis:inherit;
-
-	padding: 10px 200px;
+	padding: 5px;
 }
 
+.datostarjeta p{
+	height: 20px;
+	padding: 10px 5px 5px 5px;
+}
+
+/*Popup*/
+.popup-form{
+	display: flex;
+	flex-direction: column;
+	background-color: #ffc290;
+	border-style: dotted;
+	border-radius: 5px;
+	max-width: 400px;
+	padding:10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 2em;
+	font-family: 'Open Sans', sans-serif;
+	/*display: none;*/
+}
+
+.popup-form input{
+	padding: 10px;
+	margin: 5px 0px;
+	background-color: #f8d2b3;
+	border-radius: 2px;
+}
+
+form {
+	border-radius: 5px;
+}
+
+.popup-button{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+}
+
+.popup-button a{
+	border-radius: 3px;
+	padding: 10px 5px;
+	border:1px solid #000000;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+	font-style: normal;
+	text-align: center;
+  }
 

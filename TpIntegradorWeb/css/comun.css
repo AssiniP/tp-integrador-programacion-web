@@ -116,7 +116,7 @@ p{
     padding: 1em 4em;
 }
 #buscador{
-    width: 80%;
+    width: 75%;
     height: 40px;
     border-radius: 5px;
 }
@@ -143,10 +143,14 @@ nav li{
     border:2px solid #489bad;
     text-align: center;
     border-radius: 6px;
+    font-size: larger;
+    font-weight: 500;
 }
 
 nav li:hover{
     background-color:  rgb(177, 167, 242, 20);
+    transition: ease;
+    transition-duration: 0.2s;
 }
 nav a:hover{
     color:#6d3ef0;
@@ -157,9 +161,10 @@ footer{
     display: flex;
     background-color: #85def2;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items:center;
     padding: 1em 5em;
+    font-family: 'Manrope', sans-serif
 }
 .logo-empresa{
     width: 150px;
@@ -179,12 +184,14 @@ footer{
 }
 
 #carrito:hover{
-    color: #6d3ef0;
+    color: #985aeb;
     transform: scale(1.2,1.2);
+    transition: ease;
+    transition-duration: 0.2s;
 }
 
 .icono:hover{
-    color:#6d3ef0;
+  color: #573d3d;
 }
 
 .icono{
@@ -196,5 +203,21 @@ footer{
 .icon-reloj{
     font-size: 1.5em;
     color: #2c2727;
+    position: absolute;
+    right: 210px;
 }
+
+#info_tienda{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif
+}
+
+#redes_sociales {
+  font-weight: 500;
+  font-size: large;
+}
+
+
 

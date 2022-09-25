@@ -18,6 +18,8 @@ button:hover {
 
 #imagen-cuenta{
 	padding-right: 25px;
+	border-radius: 3px;
+	width: 200px;
 }
 
 
@@ -60,6 +62,7 @@ button:hover {
   
 table, th, td {
 	border: 1px solid rgba(0,0,0,.2);
+	font-family: 'Open Sans', sans-serif;
 }
 
 table {
@@ -73,55 +76,11 @@ th, td {
 }
 
 th {
-	background: #f4cd85;
+	background: #ffc290;
 	color: #000;
 }
 
 
 tr:hover {
-	background: #e5e5e5;
+	background: rgb(255, 194, 144, 20%);
 }
-
-.popup-form{
-	display: flex;
-	flex-direction: column;
-	background-color: #f7b697;
-	border-style: dotted;
-	border-radius: 5px;
-	max-width: 400px;
-	padding:10px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	display: none;
-}
-
-.popup-form input{
-	width: 100%;
-	padding: 10px;
-	margin: 5px 0px;
-	background-color: #f3ded4;
-	border-radius: 2px;
-}
-
-form {
-	border-radius: 5px;
-}
-
-.popup-button{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	height: 50px;
-}
-
-.popup-button a{
-	border-radius: 3px;
-	padding: 10px 5px;
-	border:1px solid #000000;
-	color: #000000;
-	font-size: 16px;
-	text-decoration: none;
-	font-style: normal;
-	text-align: center;
-  }
