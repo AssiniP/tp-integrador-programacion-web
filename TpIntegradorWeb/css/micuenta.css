@@ -17,8 +17,8 @@ button:hover {
 }
 
 #imagen-cuenta{
-	padding-right: 25px;
-	border-radius: 3px;
+	padding-right: 10px;
+	border-radius: 50%;
 	width: 200px;
 }
 
@@ -77,10 +77,18 @@ th, td {
 
 th {
 	background: #ffc290;
+	background-image: url(../img/CocinaN/fondo.jpg);
 	color: #000;
 }
 
 
 tr:hover {
 	background: rgb(255, 194, 144, 20%);
+}
+
+td {
+	background-color: white;
+}
+main a {
+	background-image: url(../img/CocinaN/fondo.jpg);
 }

@@ -9,7 +9,7 @@ form {
 
 /* formulario*/
 .formulario {
-	background:  #f2d5a0;
+	background:  white;
 	padding: 20px;
 	border-radius: 5px;
 	width: 650px;
@@ -18,7 +18,8 @@ form {
  }
 
  .container-usuario{
-	background:  #ffc290;
+	background:  white;
+	background-image: url(../img/CocinaN/fondo.jpg);
 	font-family: 'Open Sans', sans-serif;
     font-weight: 400px;
 	padding: 15px;
@@ -105,9 +106,11 @@ button:hover {
 .popup-form{
 	display: flex;
 	flex-direction: column;
-	background-color: #ffc290;
-	border-style: dotted;
-	border-radius: 5px;
+	
+	background-image: url(../img/CocinaN/fondo.jpg);
+	border-style:double;
+	border-radius: 1px;
+	border-color: blueviolet;
 	max-width: 400px;
 	padding:10px;
 	margin-left: auto;
@@ -121,7 +124,7 @@ button:hover {
 .popup-form input{
 	padding: 10px;
 	margin: 5px 0px;
-	background-color: #f8d2b3;
+	background-color: white;
 	border-radius: 2px;
 }
 
