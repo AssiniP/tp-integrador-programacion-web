@@ -76,7 +76,13 @@
         <form class="formularioLogin" action="" method="post">
           <h2>Nueva direccion <span class="icon-home"></span></h2>
           <p class="loginOrdenado">Alias:</p>
-          <input type="text" name="alias" placeholder="Alias" value="" />
+          <input
+            type="text"
+            name="alias"
+            placeholder="Alias"
+            value=""
+            required
+          />
           <br />
           <label for="provincia">Provincia</label>
           <select id="provincia" name="provincia">
@@ -119,6 +125,7 @@
             name="direccion"
             placeholder="Direccion"
             value=""
+            required
           />
           <br />
           <p class="loginOrdenado">Telefono:</p>
@@ -131,6 +138,7 @@
             placeholder="Piso"
             value=""
             class="pisoDto"
+            required
           />
           <p class="loginOrdenado pisoDto">Dto:</p>
           <input
@@ -139,9 +147,10 @@
             placeholder="Dto"
             value=""
             class="pisoDto"
+            required
           />
           <div class="popup-button">
-            <a href="miCuenta.html">Guardar</a>
+            <a href="#">Guardar</a>
           </div>
         </form>
       </div>
@@ -172,13 +181,20 @@
         <form class="formularioLogin" action="" method="post">
           <h2>Nueva Tarjeta <span class="icon-billete_negro"></span></h2>
           <p class="loginOrdenado">Alias:</p>
-          <input type="text" name="alias" placeholder="Alias" value="" />
+          <input
+            type="text"
+            name="alias"
+            placeholder="Alias"
+            value=""
+            required
+          />
           <p class="loginOrdenado">Numero de Tarjeta:</p>
           <input
             type="text"
             name="nroTarjeta"
             placeholder="Numero de Tarjeta"
             value=""
+            required
           />
 
           <div class="datostarjeta">
@@ -189,6 +205,7 @@
               placeholder="Cdo"
               value=""
               class="codigoSeguridad"
+              required
             />
             <p class="loginOrdenado">Vencimiento:</p>
             <input
@@ -197,6 +214,7 @@
               placeholder="Vto"
               value=""
               class="Vencimiento"
+              required
             />
           </div>
 
@@ -207,10 +225,11 @@
             placeholder="Nombre Titular"
             value=""
             class="nomDeTitular"
+            required
           />
 
           <div class="popup-button">
-            <a href="miCuenta.html">Guardar</a>
+            <a href="#">Guardar</a>
           </div>
         </form>
       </div>

@@ -129,6 +129,7 @@
             name="nroTarjeta"
             placeholder="Numero de Tarjeta"
             value=""
+            required
           />
 
           <article class="datostarjeta">
@@ -139,6 +140,7 @@
               placeholder="Cdo"
               value=""
               class="codigoSeguridad"
+              required
             />
             <p class="loginOrdenado">Vencimiento:</p>
             <input
@@ -147,6 +149,7 @@
               placeholder="Vto"
               value=""
               class="Vencimiento"
+              required
             />
           </article>
           <p class="loginOrdenado">Nombre Titular:</p>
@@ -156,7 +159,16 @@
             placeholder="Nombre Titular"
             value=""
             class="nomDeTitular"
+            required
           />
+
+          <label for="tarjetas">Direcciones guardadas</label>
+          <select id="tarjetas" name="tarjetas">
+            <option value="1">-- seleccionar --</option>
+            <option value="2">Mi depto</option>
+            <option value="3">Casa de Mama</option>
+          </select>
+          <br />
 
           <label for="direccion-de-pago"
             >Otra direccion
@@ -168,7 +180,7 @@
           </label>
 
           <div class="popup-button">
-            <a href="carrito.html">Pagar</a>
+            <a href="#">Pagar</a>
           </div>
         </form>
       </div>
