@@ -22,10 +22,97 @@ button:hover {
 	width: 200px;
 }
 
+/*Tabla nueva con div*/
+.container-button{
+	display: grid;
+	text-align: center;
+	grid-template-columns: 12em 12em;
+	grid-template-rows: 1fr;
+	column-gap: 50%;
+	justify-content: center;
+	padding-top: 2%;
+}
 
+.contenedor-tabla-dos{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4em 4em 4em;
+	align-content: center;
+	height: 60%;
+	width: 80%;
+	padding: 2%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titulo-tabla{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: aquamarine;
+	border: 1px solid crimson;
+	padding: 2%;
+}
+
+.item-tabla{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid crimson;
+	background-color: darkcyan;
+	text-align: center;
+	padding: 2%;
+}
+
+.eliminar{
+	position: absolute;
+	right: -1.3em;
+	bottom: 0.4em;
+	font-size: 2em;
+}
+
+.contenedor-tabla-uno{
+	/*display: inline-grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2em 2em 2em;
+	align-content: center;*/
+	position: relative;
+	height: 60%;
+	width: 80%;
+	padding: 2%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contenedor-tabla-tres{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 4em 4em 4em;
+	align-content: center;
+	height: 60%;
+	width: 80%;
+	padding: 1%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulo-carrito{
+	padding-top: 1em;
+	padding-left: 10em;
+	text-align: left;
+}
+
+.pago-carrito{
+	text-align: right;
+	padding-right: 10em;
+	padding-bottom: 2em;
+	font-size:  1.2em;
+}
 /* Tabla */ 
 /* Responsive Table Reset */
- .micuenta-tabla{
+ /*.micuenta-tabla{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -88,7 +175,7 @@ tr:hover {
 
 td {
 	background-color: white;
-}
+}*/
 main a {
 	background-image: url(../img/CocinaN/fondo.jpg);
 }

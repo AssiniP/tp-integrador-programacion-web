@@ -118,7 +118,7 @@ button:hover {
 	position: relative;
 	z-index: 2em;
 	font-family: 'Open Sans', sans-serif;
-	/*display: none;*/
+	display: none;
 }
 
 .popup-form input{
