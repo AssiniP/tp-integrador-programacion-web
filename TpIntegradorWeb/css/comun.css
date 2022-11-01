@@ -99,20 +99,23 @@ main{
 
 h1{
    font-family: 'Manrope', sans-serif;
-   font-weight: 3.3em;
+   font-weight: 600;
+   font-size: 3.3em;
 }
 
 h2, h3{
     font-family: 'Manrope', sans-serif;
-    font-weight: 3em;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 a, button{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 2.5em;
+    font-weight: 500;
+    font-size: 1em;
 }
 p{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 2em;
+    font-size: 1em;
 }
 .header_pagina{
     display: flex;
