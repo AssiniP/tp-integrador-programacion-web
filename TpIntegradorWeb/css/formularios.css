@@ -1,18 +1,10 @@
-/* Bordered form */
-form {
-	/*background: #f2d5a0;
-	margin: 20px auto;
-	padding: 20px;
-	border-radius: 5px;
-  width: 50%;*/
-}
 
 /* formulario*/
 .formulario {
 	background:  white;
-	padding: 20px;
-	border-radius: 5px;
-	width: 650px;
+	padding: 1em;
+	border-radius: 0.2em;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
  }
@@ -21,9 +13,9 @@ form {
 	background:  white;
 	background-image: url(../img/CocinaN/fondo.jpg);
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 400px;
-	padding: 15px;
-	border-radius: 3px;
+    font-weight: 400;
+	padding: 1em;
+	border-radius: 0.2em;
 	display: flex;
 	flex-direction: column;
 	margin-left: auto;
@@ -39,34 +31,32 @@ form {
 	display: block;
 }
 
-/* Full-width inputs */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 1em 1.2em;
+  margin: 0.5em 0em;
   display: inline-block;
   box-sizing: border-box;
 }
 button  {
-	width: 200px;
-	margin: 0 auto;
-	padding: 10px;
+	width: 100%;
+	margin: 0em auto;
+	padding: 1em;
+	border-radius: 0.2em;
+	font-size: 1em;
 	border:1px solid #000000;
 	color: #000000;
 	background: none;
 	cursor: pointer;
-	border-radius: 3px;
-	font-size: 16px;
 }
 
 .containe-button a{
-	border-radius: 3px;
-	width: 200px;
-	margin: 0 auto;
-	padding: 10px;
+	border-radius: 0.2em;
+	width: 100%;
+	margin: 0em auto;
+	padding: 1em;
 	border:1px solid #000000;
 	color: #000000;
-	font-size: 16px;
 	font-style: normal;
   }
 
@@ -75,31 +65,28 @@ button  {
   text-align: center;
 }
 
-/* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
 
-/* Imagen */
 .imgcontainer {
     text-align: center;
-    padding: 30px;
+	padding: 1em;
 }
 
-/* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 1em;
 }
 
 .datostarjeta{
 	display: flex;
 	flex-direction: row;
-	padding: 5px;
+	padding: 0.2em;
 }
 
 .datostarjeta p{
-	height: 20px;
-	padding: 10px 5px 5px 5px;
+	height: 1em;
+	padding: 1em 0.5em 0.5em 0.5em;
 }
 
 /*Popup*/
@@ -109,44 +96,44 @@ button:hover {
 	
 	background-image: url(../img/CocinaN/fondo.jpg);
 	border-style:double;
-	border-radius: 1px;
 	border-color: blueviolet;
-	max-width: 400px;
-	padding:10px;
+	border-radius: 0.2em;
+	max-width: 30%;
+	padding: 1em;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 	z-index: 2em;
 	font-family: 'Open Sans', sans-serif;
-	display: none;
 }
 
 .popup-form input{
-	padding: 10px;
-	margin: 5px 0px;
+	padding: 1em;
+	margin: 0.4em 0em;
+	border-radius: 0.2em;
 	background-color: white;
-	border-radius: 2px;
 }
 
 form {
-	border-radius: 5px;
+	border-radius: 0.3em;
+
 }
 
 .popup-button{
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	height: 50px;
+	height: auto;
 }
 
 .popup-button a{
-	border-radius: 3px;
-	padding: 10px 5px;
-	border:1px solid #000000;
-	color: #000000;
-	font-size: 16px;
+	border-radius: 0.3em;
+	padding: 0.6em 0.5em;
+	font-size: 1em;
 	text-decoration: none;
 	font-style: normal;
 	text-align: center;
+	border:1px solid #000000;
+	color: #000000;
   }
 

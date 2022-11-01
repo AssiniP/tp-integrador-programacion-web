@@ -1,12 +1,13 @@
 .imagen-producto-destacado-info{
-    width: 350px;
-    border-radius: 50px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 5em;
 }
 
 .boton_del_carrito{
     position: absolute;
-    bottom: 10px;
-    right: 30px;
+    bottom: 1em;
+    right: 1em;
     font-size: 1.7em;
 }
 
@@ -17,7 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     bottom: 10%;
-    padding: 50px;
+    padding: 2em;
     width: 80%;
 }
 
@@ -38,8 +39,8 @@
 
 .titulo_del_producto{
     position: absolute;
-    top: 60px;
-    left: 400px;
+    top: 2em;
+    right: 3em;
 }
 
 
@@ -51,26 +52,26 @@
 
 .info_del_producto_destacado input{
     width: 70%;
-    height: 25px;
+    height: auto;
 }
 
 
 
 .precio_del_producto_destacado{
     position: absolute;
-    bottom: 50px;
-    left: 0px;
+    bottom: 4em;
+    left: 0em;
     background-color: rgb(133, 222, 242, 50%);
-    padding: 5px 15px;
-    border-radius: 0px 150px 150px 0px;
+    padding: 0.5em 1em;
+    border-radius: 0em 2em 2em 0em;
     font-weight: 600;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
 .boton_del_carrito{
     position: absolute;
     background-image: url(../img/CocinaN/fondo.jpg);
-    padding: 5px 5px;
+    padding: 0.2em 0.2em;
     font-size: 1.2em;
     text-align: center;
     border-radius: 5px;

@@ -1,5 +1,4 @@
 
-/* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
@@ -8,18 +7,19 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 20px;
+    padding: 1em 2em;
 }
 
 .nombreApellido h2{
-	height: 50px;
+	height: auto;
 	align-self:center;
 }
 
 #imagen-cuenta{
-	padding-right: 10px;
+	padding-right: 1em;
+	width: 15%;
+	height: auto;
 	border-radius: 50%;
-	width: 200px;
 }
 
 /*Tabla nueva con div*/
@@ -73,10 +73,6 @@ button:hover {
 }
 
 .contenedor-tabla-uno{
-	/*display: inline-grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 2em 2em 2em;
-	align-content: center;*/
 	position: relative;
 	height: 60%;
 	width: 80%;

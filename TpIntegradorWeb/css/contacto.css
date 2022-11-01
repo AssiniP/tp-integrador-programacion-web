@@ -3,7 +3,7 @@
     flex-direction: row;
 	flex-wrap: wrap;
     justify-content: space-around;
-    padding: 17px 10px;
+    padding: 1em 0.5em;
     text-align: left;
 }
 
@@ -11,19 +11,19 @@
 	flex-basis: 100%;
 	text-align: left;
 	padding-left: 4%;
-	padding-bottom: 10px;
+	padding-bottom: 1em;
+
 }
 
 .contenedor-formulario{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	
-	background-image: url(../img/CocinaN/fondo.jpg);
-	padding: 30px;
-	border-radius: 3px;
+	padding: 1em;
+	border-radius: 0.2em;
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
+	background-image: url(../img/CocinaN/fondo.jpg);
 }
 
 .informacion-contacto h2{
@@ -35,14 +35,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding: 10px 12px;
-	height: 300px;
+	padding: 1em 1em;
+	height: auto;
 	background-image: url(../img/CocinaN/fondo.jpg);
-	border-radius: 3px;
+	border-radius: 0.2em;
 }
 
 .infomacion-extendida{
-	width: 30px;
+	width: 30%;
 }
 
 .icono-logo{
@@ -56,16 +56,16 @@
 }
 
 .contacto-mapa{
-    padding: 10px;
+	padding: 1em;
     flex-basis: 100%;
     text-align: center;
 	align-items: center;
 }
 
 .ubicacion{
-	margin-top: 30px;
-	padding: 20px;
-	border-radius: 3px;
+	margin-top: 1em;
+	padding: 1em;
+	border-radius: 0.2em;
 	background-image: url(../img/CocinaN/fondo.jpg);
 	background-color: rgb(255, 194, 144);
 }
@@ -79,19 +79,17 @@
 .formulario input[type="email"],
 .formulario textarea {
 	width: 100%;
-	padding: 20px;
-	margin-bottom: 20px;
-	border-radius: 3px;
+	padding: 1em;
+	margin-bottom: 1em;
+	border-radius: 0.2em;
+	font-size: 1em;
 	border:1px solid #000000;
-	font-size: 16px;
 	font-family: Arial;
 }
 
 .formulario textarea {
-	min-height: 120px;
-	max-height: 300px;
-	min-width: 100%;
 	max-width: 100%;
+	height: auto;
 }
 
 .formulario input[type="text"]:focus,
@@ -101,15 +99,15 @@
 }
 
 .formulario input[type="submit"] {
-	width: 200px;
-	margin: 0 auto;
-	padding: 10px;
+	width: 50%;
+	margin: 0em auto;
+	padding: 0.3em;
 	border:1px solid #000000;
 	color: #000000;
 	background: none;
 	cursor: pointer;
-	border-radius: 3px;
-	font-size: 16px;
+	border-radius: 0.2em;
+	font-size: 1em;
 }
 
 .formulario input[type="submit"]:hover {
