@@ -9,52 +9,33 @@
     <title>Nuevo Usuario</title>
   </head>
   <body>
-    <form action="action_page.php" method="post" class="formulario-login">
+    <main>
+    <form action="login.html" method="get" class="formulario-login">
       <article class="imgcontainer">
         <img src="img/logo_empresa.png" alt="Avatar" class="logo-empresa" />
       </article>
 
       <article class="container-usuario">
-        <label for="uname"><b>Email</b></label>
-        <input
-          type="text"
-          placeholder="Ingrese el Email"
-          name="uname"
-          required
-        />
-        <label for="uname"><b>Nombre</b></label>
-        <input
-          type="text"
-          placeholder="Ingrese el Nombre"
-          name="uname"
-          required
-        />
+ 
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" placeholder="Ingrese el Nombre" name="nombre" id="nombre" required />
         <label for="uname"><b>Apellido</b></label>
-        <input
-          type="text"
-          placeholder="Ingrese el Apellido"
-          name="uname"
-          required
-        />
+        <input type="text" placeholder="Ingrese el Apellido" name="apellido" id="apellido" required />
+        <label for="usuario"><b>Usuario</b> </label>
+        <input type="text" name="usuario" id="usuario" placeholder="Ingrese el Usuario" required />
         <label for="psw"><b>Constraseña</b></label>
-        <input
-          type="password"
-          placeholder="Ingrese la Constraseña"
-          name="psw"
-          required
-        />
+        <input type="password" placeholder="Ingrese la Constraseña" name="password" id="password" required />
         <label for="psw"><b>Repetir Constraseña</b></label>
-        <input
-          type="password"
-          placeholder="Ingrese la Constraseña"
-          name="psw"
-          required
-        />
+        <input type="password" placeholder="Ingrese la Constraseña" name="re-password" id="re-password" required />
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Ingrese el Email" name="email" id="email" required />
       </article>
-      <div class="containe-button">
-        <a href="login.html">Cancelar</a>
-        <a href="login.html">Guardar</a>
-      </div>
+      <div class="buttom-box">
+        <a id="btn-cancel" href="login.html">Cancel</a>
+        <input type="button" name="Aceptar" id="btn-save" value="Guardar" onclick="validarDatosDeUsuario()">
+    </div>
     </form>
+  </main>
+      <script src="js/login.js"></script>
   </body>
 </html>
