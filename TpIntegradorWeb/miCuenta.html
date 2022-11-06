@@ -18,14 +18,21 @@
           class="logo-empresa"
       /></a>
       <label for="buscador"></label>
-      <input
-        type="search"
-        id="buscador"
-        name="buscador"
-        placeholder="Buscador"
-      />
+      <div class="buscador-container">
+        <span class="icon-lupa" id="lupa"></span>
+        <span class="icon-cruz oculto" id="cruz"></span>
+        <input
+          type="search"
+          id="buscador"
+          name="buscador"
+          placeholder="Buscador"
+        />
+      </div>
       <a href="carrito.html" id="carrito"
         ><span class="icon-carrito_de_compras_negro"></span
+      ></a>
+      <a href="crearusuario.html" id="login-usuario"
+        ><span class="icon-usuario"></span
       ></a>
     </header>
     <nav>
@@ -226,6 +233,7 @@
             type="text"
             name="alias"
             placeholder="Alias"
+            id="alias"
             value=""
             required
           />
@@ -234,6 +242,7 @@
             type="text"
             name="nroTarjeta"
             placeholder="Numero de Tarjeta"
+            id="nroTarjeta"
             value=""
             required
           />
@@ -244,6 +253,7 @@
               type="text"
               name="codigo"
               placeholder="Cdo"
+              id="codigoTarjeta"
               value=""
               class="codigoSeguridad"
               required
@@ -253,6 +263,7 @@
               type="text"
               name="vto"
               placeholder="Vto"
+              id="vencimientoTarjeta"
               value=""
               class="Vencimiento"
               required
@@ -264,6 +275,7 @@
             type="text"
             name="nomtitular"
             placeholder="Nombre Titular"
+            id="titularTarjeta"
             value=""
             class="nomDeTitular"
             required
@@ -308,5 +320,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/validacionTarjeta.js"></script>
   </body>
 </html>

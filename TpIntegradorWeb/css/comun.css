@@ -131,9 +131,26 @@ p{
     align-items: center;
     padding: 1em 4em;
 }
+
+.buscador-container{
+  position: relative;
+  width: 40%;
+}
+
+#lupa, #cruz{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: 1em;
+}
+
+#cruz{
+  cursor: pointer;
+}
+
 #buscador{
-    width: 75%;
-    height: 3em;
+    padding: 1em;
+    width: 100%;
     border-radius: 0.3em;
 }
 
@@ -208,6 +225,20 @@ footer{
     transition: ease;
     transition-duration: 0.2s;
 }
+
+#login-usuario{
+  text-decoration: none;
+    font-size: 2.2em;
+    color: #2c2727;
+}
+
+#login-usuario:hover{
+  color: #985aeb;
+  transform: scale(1.2,1.2);
+  transition: ease;
+  transition-duration: 0.2s;
+}
+
 
 .icono:hover{
   color: #573d3d;
