@@ -27,26 +27,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-check_negro:before {
-  content: "\e900";
+.icon-usuario:before {
+  content: "\e971";
 }
-.icon-carrito_de_compras_negro:before {
-  content: "\e901";
-}
-.icon-icono_github:before {
-  content: "\e902";
-}
-.icon-icono_instagram:before {
-  content: "\e903";
-}
-.icon-billete_negro:before {
-  content: "\e904";
-}
-.icon-plus_negro:before {
-  content: "\e905";
-}
-.icon-tacho_de_basura_negro:before {
-  content: "\e906";
+.icon-cruz:before {
+  content: "\ea0f";
 }
 .icon-home:before {
   content: "\e907";
@@ -83,6 +68,27 @@
 }
 .icon-whatsapp:before {
   content: "\ea93";
+}
+.icon-check_negro:before {
+  content: "\e900";
+}
+.icon-carrito_de_compras_negro:before {
+  content: "\e901";
+}
+.icon-icono_github:before {
+  content: "\e902";
+}
+.icon-icono_instagram:before {
+  content: "\e903";
+}
+.icon-billete_negro:before {
+  content: "\e904";
+}
+.icon-plus_negro:before {
+  content: "\e905";
+}
+.icon-tacho_de_basura_negro:before {
+  content: "\e906";
 }
 
 /* Fin del icomoon */
