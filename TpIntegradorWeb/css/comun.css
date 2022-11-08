@@ -156,6 +156,7 @@ p{
 
 nav{
     background-color:  #85def2;
+    border-bottom: #E09DF2 1px solid;
 }
 nav a{
     text-decoration:none;
