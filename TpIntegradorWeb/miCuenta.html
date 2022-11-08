@@ -167,7 +167,6 @@
             placeholder="Piso"
             value=""
             class="pisoDto"
-            required
           />
           <p class="loginOrdenado pisoDto">Dto:</p>
           <input
@@ -176,10 +175,9 @@
             placeholder="Dto"
             value=""
             class="pisoDto"
-            required
           />
           <div class="popup-button">
-            <a href="#">Guardar</a>
+            <input type="submit" value="guardar" />
           </div>
         </form>
       </div>
@@ -226,7 +224,12 @@
       -->
 
       <div class="popup-form">
-        <form class="formularioLogin" action="" method="post">
+        <form
+          class="formularioLogin"
+          action=""
+          method="post"
+          id="formularioTarjeta"
+        >
           <h2>Nueva Tarjeta <span class="icon-billete_negro"></span></h2>
           <p class="loginOrdenado">Alias:</p>
           <input
@@ -282,8 +285,9 @@
           />
 
           <div class="popup-button">
-            <a href="#">Guardar</a>
+            <input type="submit" value="guardar" />
           </div>
+          <p class="mensajeError"></p>
         </form>
       </div>
     </main>
