@@ -1,4 +1,3 @@
-
 //Etiquetas de crearusuario
 const usuarioLogin = document.getElementById("usuario");
 const passLogin = document.getElementById("password");
@@ -99,7 +98,3 @@ function loginOK() {
     });
 }
 
-function olvidePass(){
-    alert("En construccion");
-    
-}

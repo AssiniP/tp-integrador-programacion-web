@@ -7,6 +7,7 @@
     <title>Maba Bazar</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
     <header class="header_pagina">
@@ -119,57 +120,40 @@
         </article>
       </section>
 
-      <section class="productos_mas_vendidos">
+      <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <h2>PRODUCTOS MAS VENDIDOS</h2>
-        <article class="producto_individual_mas_vendidos">
-          <a href="seleccionproducto.html">
-            <img
-              src="img/CocinaN/grifo.png"
-              alt="imagen del producto"
-              class="imagen-producto-info"
-            />
-          </a>
-          <p class="precio_del_producto">$ 1000.0-</p>
-          <p class="info_del_producto">
-            Grifo Zarpado
-            <a href="carrito.html" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro"> </span>
-            </a>
-          </p>
-        </article>
-        <article class="producto_individual_mas_vendidos">
-          <a href="seleccionproducto.html">
-            <img
-              src="img/cateNuevo/Infusores.jpg"
-              alt="imagen del producto"
-              class="imagen-producto-info"
-            />
-          </a>
-          <p class="precio_del_producto">$ 650.0-</p>
-          <p class="info_del_producto">
-            Hombres en jacuzzi
-            <a href="carrito.html" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro"> </span>
-            </a>
-          </p>
-        </article>
-        <article class="producto_individual_mas_vendidos">
-          <a href="seleccionproducto.html">
-            <img
-              src="img/CocinaN/secaplato.JPG"
-              alt="imagen del producto"
-              class="imagen-producto-info"
-            />
-          </a>
+        <div class="carousel-inner productos_mas_vendidos-carrusel">
+          <article class="carousel-item active producto_individual_mas_vendidos-carrusel">
+            <a href="seleccionproducto.html">
+                <img src="img/CocinaN/grifo.png" alt="imagen del producto" class="imagen-producto-info-carrusel" />
+                <p class="precio_del_producto">$ 1000.0-</p>
+                <p class="info_del_producto-carrusel">Grifo Zarpado</p>    
+            </a> 
+          </article>
 
-          <p class="precio_del_producto">$ 2500.0-</p>
-          <p class="info_del_producto">
-            Secaplatos
-            <a href="carrito.html" class="boton_del_carrito"
-              ><span class="icon-carrito_de_compras_negro"></span
-            ></a>
-          </p>
-        </article>
+          <article class="carousel-item producto_individual_mas_vendidos-carrusel">
+            <a href="seleccionproducto.html" >
+              <img src="img/cateNuevo/Infusores.jpg" alt="imagen del producto" class="imagen-producto-info-carrusel"/>
+              <p class="precio_del_producto">$ 650.0-</p>
+              <p class="info_del_producto-carrusel"> Hombres en jacuzzi</p>
+          </a>
+          </article>
+          <article class="carousel-item  producto_individual_mas_vendidos-carrusel">
+            <a href="seleccionproducto.html">
+              <img src="img/CocinaN/secaplato.JPG" alt="imagen del producto" class="imagen-producto-info-carrusel"/>
+              <p class="precio_del_producto">$ 2500.0-</p>
+              <p class="info_del_producto-carrusel">Secaplatos</p>
+          </a>
+          </article>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
 
       <aside class="formas_de_pago">
@@ -222,5 +206,6 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
