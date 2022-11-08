@@ -197,7 +197,7 @@
 }
 
 .imagen-producto-info-carrusel{
-    width: 22em;
+    width: 20em;
     height: auto;
     border-radius: 2em 2em 2em 2em;
     align-self: center;
@@ -209,12 +209,10 @@
     padding: 1em;
 }
 
-
-
 .info_del_producto-carrusel{
     background-color: rgb(165, 220, 233);
     border-radius: 0px 0px 50px 50px;
-    width: 22em;
+    width: 20em;
     padding: 0.6em 1em;
 }
 
@@ -230,7 +228,22 @@
     font-weight: 600;
     font-size:1.2em;
 }
+
+.producto_individual_mas_vendidos-carrusel{
+   align-items: center;
+    margin: 2em;
+   margin-right: 40%;
+   margin-left: 40%;
+}
+
+.producto_individual_mas_vendidos-carrusel:hover{
+    transform: scale(1.1,1.1);
+    filter: brightness(85%);
+    transition: ease;
+    transition-duration: 0.2s;
+}
+
 .carrusel{
-    carousel-control-width: 25em;
+    carousel-control-width: 23em;
     padding: 2% 35% 35% 2%;
 }
