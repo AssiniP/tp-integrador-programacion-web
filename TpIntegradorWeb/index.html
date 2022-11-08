@@ -7,7 +7,6 @@
     <title>Maba Bazar</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
     <header class="header_pagina">
@@ -18,21 +17,14 @@
           class="logo-empresa"
       /></a>
       <label for="buscador"></label>
-      <div class="buscador-container">
-        <span class="icon-lupa" id="lupa"></span>
-        <span class="icon-cruz oculto" id="cruz"></span>
-        <input
-          type="search"
-          id="buscador"
-          name="buscador"
-          placeholder="Buscador"
-        />
-      </div>
+      <input
+        type="search"
+        id="buscador"
+        name="buscador"
+        placeholder="Buscador"
+      />
       <a href="carrito.html" id="carrito"
         ><span class="icon-carrito_de_compras_negro"></span
-      ></a>
-      <a href="crearusuario.html" id="login-usuario"
-        ><span class="icon-usuario"></span
       ></a>
     </header>
     <nav>
@@ -86,7 +78,7 @@
       <section class="categorias_de_productos">
         <h2>CATEGORIAS</h2>
 
-        <article class="producto_individual">
+        <article class="producto_individual" id="baño">
           <a href="cocina.html" class="link-producto">
             <img
               src="img/cateNuevo/Baño.jpg"
@@ -97,10 +89,10 @@
           </a>
         </article>
 
-        <article class="producto_individual">
+        <article class="producto_individual" id="cocina">
           <a href="cocina.html" class="link-producto">
             <img
-              src="img/cateNuevo/Cocina.jpg"
+              src="img/cateNuevo/Cocina.JPG"
               alt="imagen del producto"
               class="imagen-producto"
             />
@@ -108,10 +100,10 @@
           </a>
         </article>
 
-        <article class="producto_individual">
+        <article class="producto_individual" id="hogar">
           <a href="cocina.html" class="link-producto">
             <img
-              src="img/cateNuevo/DecoHogar.jpg"
+              src="img/cateNuevo/DecoHogar.JPG"
               alt="imagen del producto"
               class="imagen-producto"
             />
@@ -120,41 +112,57 @@
         </article>
       </section>
 
-      <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <section class="productos_mas_vendidos">
         <h2>PRODUCTOS MAS VENDIDOS</h2>
-        <div class="carousel-inner productos_mas_vendidos-carrusel">
-          
-          <article class="carousel-item active producto_individual_mas_vendidos-carrusel">
-            <a href="seleccionproducto.html">
-                <img src="img/CocinaN/grifo.png" alt="imagen del producto" class="imagen-producto-info-carrusel" />
-                <p class="precio_del_producto">$ 1000.0-</p>
-                <p class="info_del_producto-carrusel">Grifo Zarpado</p>    
-            </a> 
-          </article>
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/CocinaN/grifo.png"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
+          <p class="precio_del_producto">$ 1000.0-</p>
+          <p class="info_del_producto">
+            Grifo Zarpado
+            <span
+              class="icon-carrito_de_compras_negro boton_del_carrito"
+            ></span>
+          </p>
+        </article>
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/cateNuevo/Infusores.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
+          <p class="precio_del_producto">$ 650.0-</p>
+          <p class="info_del_producto">
+            Hombres en jacuzzi
+            <span
+              class="icon-carrito_de_compras_negro boton_del_carrito"
+            ></span>
+          </p>
+        </article>
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/CocinaN/secaplato.JPG"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
 
-          <article class="carousel-item producto_individual_mas_vendidos-carrusel">
-            <a href="seleccionproducto.html" >
-              <img src="img/cateNuevo/Infusores.jpg" alt="imagen del producto" class="imagen-producto-info-carrusel"/>
-              <p class="precio_del_producto">$ 650.0-</p>
-              <p class="info_del_producto-carrusel"> Hombres en jacuzzi</p>
-          </a>
-          </article>
-          <article class="carousel-item  producto_individual_mas_vendidos-carrusel">
-            <a href="seleccionproducto.html">
-              <img src="img/CocinaN/secaplato.JPG" alt="imagen del producto" class="imagen-producto-info-carrusel"/>
-              <p class="precio_del_producto">$ 2500.0-</p>
-              <p class="info_del_producto-carrusel">Secaplatos</p>
-          </a>
-          </article>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+          <p class="precio_del_producto">$ 2500.0-</p>
+          <p class="info_del_producto">
+            Secaplatos
+            <span
+              class="icon-carrito_de_compras_negro boton_del_carrito"
+            ></span>
+          </p>
+        </article>
       </section>
 
       <aside class="formas_de_pago">
@@ -175,10 +183,8 @@
     <footer class="footer_de_pagina">
       <div id="info_tienda">
         <img src="img/logo_empresa.png" alt="logo" class="logo-footer" />
-        <p>
-          <span class="icon-reloj"></span> Lunes a Sabado <br />
-          de 8 a 14hs. y de 16 a 20hs.
-        </p>
+        <p><span class="icon-reloj"></span> Lunes a Sabado</p>
+        <p>de 8 a 14hs. y de 16 a 20hs.</p>
       </div>
       <div id="datos_del_grupo">
         <h3>Datos del Grupo</h3>
@@ -207,6 +213,5 @@
         </a>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
