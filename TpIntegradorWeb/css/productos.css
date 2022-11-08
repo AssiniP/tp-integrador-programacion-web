@@ -188,9 +188,3 @@
     text-align: left;
 }
 
-.carousel-inner{
-   display: flex;
-   align-content: center;
-   margin-right: auto;
-   margin-left: auto;
-}
