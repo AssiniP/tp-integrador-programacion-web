@@ -1,33 +1,11 @@
 
 /* Banner */
+.slider{
+    width: 70%;
+    margin-left: 15%;
 
-.banner{
-    display: flex;
-    justify-content: center;
-    padding: 0.5em 1em;
 }
 
-.banner_img{
-    max-width: 17%;
-    height: auto;
-    margin-top: 2%;
-    border-radius: 0.4em;
-    align-self: center;
-}
-
-
-.flecha{
-    text-decoration: none;
-    color: #2c2727;
-    font-size: 3em;
-    align-self:center;
-}
-
-.flecha:hover{
-    transform: scale(1.2,1.2);
-    transition: ease;
-    transition-duration: 0.2s;
-}
 
 .categorias_de_productos{
     display: flex;
@@ -168,21 +146,10 @@
 }
 
 
-.formas_de_pago{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 2em;
-}
-
 .formas_de_pago h2{
     flex-basis: 100%;
     text-align: center;
     padding: 1em 0em;
-}
-
-.formas_de_pago button{
-    margin: 1em 1em;
 }
 
 .opcion_de_pago{

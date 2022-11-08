@@ -7,6 +7,8 @@
     <title>Maba Bazar</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
   </head>
   <body>
     <header class="header_pagina">
@@ -37,42 +39,17 @@
     </nav>
     <main>
       <section>
-        <article>
-          <ul class="banner">
-            <li id="banner_img_1" class="banner">
-              <a href="#" class="flecha"
-                ><span class="icon-flecha_izq"></span
-              ></a>
-              <img
-                src="img/cateNuevo/Cocina.JPG"
-                alt="imagen"
-                class="banner_img"
-              />
-              <img
-                src="img/CocinaN/miniPicador.JPG"
-                alt="imagen"
-                class="banner_img"
-              />
-              <img
-                src="img/CocinaN/tapasSilicona.JPG"
-                alt="imagen"
-                class="banner_img"
-              />
-              <img
-                src="img/CocinaN/colgsnteEstante.jpg"
-                alt="imagen"
-                class="banner_img"
-              />
-              <img
-                src="img/CocinaN/sellas.jpg"
-                alt="imagen"
-                class="banner_img"
-              />
-              <a href="#" class="flecha"
-                ><span class="icon-flecha_der"></span
-              ></a>
-            </li>
-          </ul>
+        <article class="slider">
+              <img src="img/cateNuevo/Cocina.JPG" alt="imagen" class="banner_img" />
+              <img src="img/CocinaN/miniPicador.JPG" alt="imagen" class="banner_img"/>
+              <img src="img/CocinaN/tapasSilicona.JPG" alt="imagen" class="banner_img"/>
+              <img src="img/CocinaN/colgsnteEstante.jpg" alt="imagen" class="banner_img"/>
+              <img src="img/CocinaN/sellas.jpg" alt="imagen" class="banner_img"/>
+              <img src="img/cateNuevo/DecoHogar.JPG" alt="imagen" class="banner_img" />
+              <img src="img/CocinaN/bowlEscurridor.JPG" alt="imagen" class="banner_img"/>
+              <img src="img/CocinaN/cepillDeMano.JPG" alt="imagen" class="banner_img"/>
+              <img src="img/CocinaN/dispenser.jpg" alt="imagen" class="banner_img"/>
+              <img src="img/CocinaN/cepilloOlla.jpg" alt="imagen" class="banner_img"/>
         </article>
       </section>
       <section class="categorias_de_productos">
@@ -80,8 +57,7 @@
 
         <article class="producto_individual" id="baño">
           <a href="cocina.html" class="link-producto">
-            <img
-              src="img/cateNuevo/Baño.jpg"
+            <img src="img/cateNuevo/Baño.jpg" 
               alt="imagen del producto"
               class="imagen-producto"
             />
@@ -167,16 +143,17 @@
 
       <aside class="formas_de_pago">
         <h2>FORMAS DE PAGO</h2>
-        <a href="#" class="flecha"><span class="icon-flecha_izq"></span></a>
+        <div class="slider">
         <img src="img/logo_cabal.png" alt="cabal" class="opcion_de_pago" />
         <img src="img/logo_maestro.png" alt="maestro" class="opcion_de_pago" />
-        <img
-          src="img/logo_mastercard.png"
-          alt="mastercard"
-          class="opcion_de_pago"
-        />
-        <img src="img/logo_visa.png" alt="visa" class="opcion_de_pago" />
-        <a href="#" class="flecha"><span class="icon-flecha_der"></span></a>
+        <img src="img/logo_mastercard.png" alt="mastercard" class="opcion_de_pago"/>
+        <img src="img/logo_visa.png" alt="visa" class="opcion_de_pago"/>
+        <img src="img/logo_cabal.png" alt="cabal" class="opcion_de_pago" />
+        <img src="img/logo_maestro.png" alt="maestro" class="opcion_de_pago" />
+        <img src="img/logo_mastercard.png" alt="mastercard" class="opcion_de_pago"/>
+        <img src="img/logo_visa.png" alt="visa" class="opcion_de_pago"/>
+        </div>
+        
       </aside>
     </main>
 
@@ -213,5 +190,17 @@
         </a>
       </div>
     </footer>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay:true,
+                slidesToShow:4,
+                slidesToScroll:1
+            });
+        });
+        
+    </script>
   </body>
 </html>
