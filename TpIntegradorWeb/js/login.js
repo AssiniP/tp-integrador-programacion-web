@@ -15,6 +15,7 @@ const passwordLogin=document.querySelector("#password-login");
 const botonLogin=document.getElementById('btn-login');
 
 let coleccionLocal = [];
+let menssajeError="";
 
 // escucha el evento click de guardad en crearusuario.html
 guardar.addEventListener("click",(event)=>{
@@ -53,7 +54,7 @@ function agregarAColeccion() {
 }
 
 function validarEmail(event) {
-    agregarAColeccion();
+//    agregarAColeccion();
     localStorage.setItem("list", JSON.stringify(coleccionLocal));
     valido = false;
     if(expReg.test(email.value)){
@@ -74,11 +75,11 @@ function validarPass() {
         if(ps.value == rps.value){
             valido = true;
         }else {
-            alert("La contraseña debe coincidir con la confirmacion. ");
+            menssajeError=+"La contraseña debe coincidir con la confirmacion. ";
             e.defaultPrevented();
         }
     }else{
-        alert("Contraseña no segura, 6 caracteres minimos, letras y/o números, minúscula o mayúscula.");
+        menssajeError=+"Contraseña no segura, 6 caracteres minimos, letras y/o números, minúscula o mayúscula.";
         e.defaultPrevented();
         
     }
@@ -92,8 +93,8 @@ function loginOK() {
         if(element.usuario == userLogin.value && element.pass == passwordLogin.value){
             window.location.href = 'miCuenta.html';
         }else {
-            alert("El usuario o la contraseña es incorrecto, vuelva a intentarlo#####");
-            window.location.href = 'login.html';
+            menssajeError=+"El usuario o la contraseña es incorrecto, vuelva a intentarlo";
+           // window.location.href = 'login.html';
         }
     });
 }

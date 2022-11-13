@@ -49,8 +49,9 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: aquamarine;
-	border: 1px solid crimson;
+	font-weight: bolder;
+	background-color: #85def2;
+	border: 1px solid #000;
 	padding: 2%;
 }
 
@@ -59,8 +60,9 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid crimson;
-	background-color: darkcyan;
+	border: 1px solid  #000;
+	background-color: rgb(229, 240, 240); 
+
 	text-align: center;
 	padding: 2%;
 }
