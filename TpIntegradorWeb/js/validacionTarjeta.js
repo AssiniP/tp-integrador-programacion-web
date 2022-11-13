@@ -34,6 +34,8 @@ function validarCamposDelFormulario(){
         document.querySelector(".mensajeError").innerHTML = mensajeDeError;
     } else{
         formularioTarjeta.submit();
+        ocultarDireccion();
+        ocultarTarjeta();
     }
 }
 
@@ -52,3 +54,22 @@ function calcularSiEsUnNumeroParOImpar(numero){
     return resultado;
 }
 
+function mostrarDireccion(){
+    let setPopUpDireccion=document.querySelector("#pop-up-direccion")
+    setPopUpDireccion.style.display = '';
+
+}
+function ocultarDireccion(){
+    let setPopUpDireccion=document.querySelector("#pop-up-direccion")
+    setPopUpDireccion.style.display = '';
+}
+
+function mostrarTarjeta(){
+    let setPopUpDireccion=document.querySelector("#pop-up-tarjeta")
+    setPopUpDireccion.style.display = '';
+
+}
+function ocultarTarjeta(){
+    let setPopUpDireccion=document.querySelector("#pop-up-tarjeta")
+    setPopUpDireccion.style.display = '';
+}
