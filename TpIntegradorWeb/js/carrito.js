@@ -55,7 +55,7 @@
 		var car = JSON.stringify({
 			Producto    : producto,
 			Cantidad  : cantidad ,
-			Precio : precio ,
+			Precio : precio 
 		});
 		dataCars.push(car);
 		localStorage.setItem("dataCars", JSON.stringify(dataCars));
@@ -77,8 +77,6 @@ function GuardarCar(){
 	selected_index=document.getElementById("txtOperacion").value ;
 		if(selected_index == "A")
 			return AddCar();
-		if(selected_index >-1)
-			return EditCar(selected_index);
 		else '' ;
 	}
 

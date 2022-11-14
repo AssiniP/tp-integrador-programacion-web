@@ -130,8 +130,9 @@ button:hover {
   .containe-button h3{
 	position: absolute;
 	text-align: center;
-	left: 320px;
-	bottom: 10px;
+	left: 400px;
+	width: auto;
+	bottom: 1em;
   }
 
   .containe-button a{
@@ -156,7 +157,7 @@ table {
 	border-collapse: collapse;
 	width: 70%;
 	margin-left:15%;
-	margin-bottom: 2em;
+	
 
 }
 

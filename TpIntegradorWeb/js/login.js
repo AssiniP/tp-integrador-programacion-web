@@ -18,14 +18,17 @@ let coleccionLocal = [];
 let menssajeError="";
 
 // escucha el evento click de guardad en crearusuario.html
-guardar.addEventListener("click",(event)=>{
+guardar.addEventListener("click",(e)=>{
     if(validarPass()&&validarEmail()){
         agregarAColeccion();
         window.location.href = 'login.html';
     }else{
-        event.defaultPrevented();
+        e.defaultPrevented();
     }
 });
+
+
+
 
 
 function accionBotonlogin(){
@@ -94,6 +97,7 @@ function loginOK() {
             window.location.href = 'miCuenta.html';
         }else {
             menssajeError=+"El usuario o la contraseña es incorrecto, vuelva a intentarlo";
+            e.defaultPrevented();
            // window.location.href = 'login.html';
         }
     });
