@@ -108,9 +108,10 @@ button:hover {
 	padding-bottom: 2em;
 	font-size:  1.2em;
 }
+
 /* Tabla */ 
 /* Responsive Table Reset */
- /*.micuenta-tabla{
+ .micuenta-tabla{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -151,9 +152,12 @@ table, th, td {
 }
 
 table {
+
 	border-collapse: collapse;
-	width: 750px;
-	height: 200px;
+	width: 70%;
+	margin-left:15%;
+	margin-bottom: 2em;
+
 }
 
 th, td {
@@ -173,7 +177,11 @@ tr:hover {
 
 td {
 	background-color: white;
-}*/
+}
+
+.table tr.even td{background-color: #fafafa;}
+
+
 main a {
 	background-image: url(../img/CocinaN/fondo.jpg);
 }

@@ -7,8 +7,9 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/contacto.css" />
+    <script type="text/javascript" src="js/carrito.js"></script>
   </head>
-  <body>
+  <body onload="cargarContadorCarrito();">
     <header class="header_pagina">
       <a href="index.html" id="logo_pagina"
         ><img
@@ -27,9 +28,10 @@
           placeholder="Buscador"
         />
       </div>
-      <a href="carrito.html" id="carrito"
-        ><span class="icon-carrito_de_compras_negro"></span
-      ></a>
+      <a href="carrito.html" id="carrito">
+        <span class="icon-carrito_de_compras_negro"></span >
+         <p class="contadorCarrito" id="contadorCarrito"></p>
+      </a>
       <a href="login.html" id="login-usuario"
         ><span class="icon-usuario"></span
       ></a>

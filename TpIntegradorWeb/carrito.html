@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/micuenta.css" />
     <link rel="stylesheet" href="css/formularios.css" />
+    <script type="text/javascript" src="js/carrito.js"></script>
   </head>
-  <body>
+  <body onload="ListCar();">
     <header class="header_pagina">
       <a href="index.html" id="logo_pagina"
         ><img src="img/logo_empresa.png" alt="logo de la pagina" class="logo-empresa" />
@@ -20,9 +21,10 @@
         <span class="icon-cruz oculto" id="cruz"></span>
         <input type="search" id="buscador" name="buscador" placeholder="Buscador" />
       </div>
-      <a href="carrito.html" id="carrito"
-        ><span class="icon-carrito_de_compras_negro"></span
-      ></a>
+      <a href="carrito.html" id="carrito">
+        <span class="icon-carrito_de_compras_negro"></span>
+        <p class="contadorCarrito" id="contadorCarrito"></p>
+      </a>
       <a href="login.html" id="login-usuario"
       ><span class="icon-usuario"></span
     ></a>
@@ -36,92 +38,17 @@
       </ul>
     </nav>
     <main>
-      <h2 class="titulo-carrito">Carrito</h2>
-      <div class="contenedor-tabla-tres">
-        <div class="titulo-tabla">Producto</div>
-        <div class="titulo-tabla">Cantidad</div>
-        <div class="titulo-tabla">Precio</div>
-        <div class="item-tabla">Hombrecitos</div>
-        <div class="item-tabla">20</div>
-        <div class="item-tabla">
-          $100
-          <span class="icon-bin eliminar"></span>
-        </div>
+   
+      <div class="grid space-top tabla-de-carrito">
+        <article class="containe-button">
+          <h2 class="titulo-carrito">Carrito</h2>
+        </article>
+          <div class="c6 contenedor-tabla">
+         
+           <table id="tblList" class="table">
+  
+          </table>
       </div>
-      <div class="pago-carrito">
-        <a href="#">Pagar</a>
-      </div>
-
-      <!--Inicio de la tabla vieja
-      <div class="tabla-de-carrito">
-        <section class="micuenta-tabla">
-          <article class="containe-button">
-            <h2>Carrito</h2>
-          </article>
-          <article class="contenedor-tabla">
-            <table>
-              <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>Eliminar</th>
-              </tr>
-              <tr>
-                <td>Cenicero</td>
-                <td>2</td>
-                <td>$ 100</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Posavasos</td>
-                <td>2</td>
-                <td>$ 100</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Macetas de Frida</td>
-                <td>2</td>
-                <td>$ 100</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Secaplatos</td>
-                <td>1</td>
-                <td>$ 2000</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Velador con luces led</td>
-                <td>3</td>
-                <td>$ 100</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Rosa de minecraft</td>
-                <td>1</td>
-                <td>$ 100</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Hombres en jacuzzi</td>
-                <td>20</td>
-                <td>$ 5500</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-              <tr>
-                <td>Almohadon</td>
-                <td>1</td>
-                <td>$ 100</td>
-                <td><span class="icon-bin"></span></td>
-              </tr>
-            </table>
-          </article>
-
-          <article class="containe-button">
-            <a href="#">Pagar</a>
-          </article>
-        </section>
-      </div>-->
 
       <div class="popup-form">
         <form class="formularioLogin" action="" method="post">

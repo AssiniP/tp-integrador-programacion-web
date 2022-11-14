@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
     <link rel="stylesheet" href="css/productos-extendidos.css" />
-    
+    <script type="text/javascript" src="js/carrito.js"></script>
   </head>
-  <body>
+  <body onload="cargarContadorCarrito();">
     <header class="header_pagina">
       <a href="index.html" id="logo_pagina"
         ><img
@@ -30,9 +30,10 @@
           placeholder="Buscador"
         />
       </div>
-      <a href="carrito.html" id="carrito"
-        ><span class="icon-carrito_de_compras_negro"></span
-      ></a>
+      <a href="carrito.html" id="carrito">
+        <span class="icon-carrito_de_compras_negro"></span >
+         <p class="contadorCarrito" id="contadorCarrito"></p>
+      </a>
       <a href="crearusuario.html" id="login-usuario"
         ><span class="icon-usuario"></span
       ></a>
@@ -60,11 +61,11 @@
           <p class="precio_del_producto_destacado">$ 650.0-</p>
           <p class="info_del_producto_destacado">
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" min="1" max="99"/>
+            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
           </p>
-          <a href="carrito.html" class="boton_del_carrito"
-            >Añadir <span class="icon-carrito_de_compras_negro"></span
-          ></a>
+          <a href="#" class="boton_del_carrito">
+            <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Hombres en jacuzzi','1','$ 650.0')"> </span>
+          </a>
         </article>
       </section>
 
@@ -79,40 +80,42 @@
             <p class="precio_del_producto">$ 1000.0-</p>
             <p class="info_del_producto-carrusel">Grifo Zarpado
               <label for="cantidad_de_producto"></label>
-                <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" min="1" max="99"/>
-                <a href="carrito.html" class="boton_del_carrito"
-                  ><span class="icon-carrito_de_compras_negro"></span
-                ></a>
+              <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+              <a href="#" class="boton_del_carrito">
+                <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Grifo Zarpado','1','$ 1000.0')"> </span>
+              </a>
             </p>         
           </article>
 
-          <article class="carousel-item producto_individual_mas_vendidos">
+          <article class="carousel-item  producto_individual_mas_vendidos">
             <a href="seleccionproducto.html" >
               <img src="img/cateNuevo/Infusores.jpg" alt="imagen del producto" class="imagen-producto-info-carrusel"/>      
           </a>
           <p class="precio_del_producto">$ 650.0-</p>
           <p class="info_del_producto-carrusel"> Hombres en jacuzzi
             <label for="cantidad_de_producto"></label>
-                <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" min="1" max="99"/>
-                <a href="carrito.html" class="boton_del_carrito"
-                  ><span class="icon-carrito_de_compras_negro"></span
-                ></a>
+            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <a href="#" class="boton_del_carrito">
+              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Hombres en jacuzzi','1','$ 650.0')"> </span>
+            </a>
           </p>
           </article>
 
-          <article class="carousel-item producto_individual_mas_vendidos">
+          <article class="carousel-item  producto_individual_mas_vendidos">
             <a href="seleccionproducto.html" >
               <img src="img/CocinaN/secaplato.JPG" alt="imagen del producto" class="imagen-producto-info-carrusel"/>      
           </a>
           <p class="precio_del_producto">$ 2500.0-</p>
           <p class="info_del_producto-carrusel"> Secaplatos
             <label for="cantidad_de_producto"></label>
-                <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" min="1" max="99"/>
-                <a href="carrito.html" class="boton_del_carrito"
-                  ><span class="icon-carrito_de_compras_negro"></span
-                ></a>
+            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <a href="#" class="boton_del_carrito">
+              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Secaplatos','1','$ 2500.0')"> </span>
+            </a>
           </p>
           </article>
+
+          
           
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

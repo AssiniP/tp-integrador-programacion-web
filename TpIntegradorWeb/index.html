@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/productos.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css">
+    <script type="text/javascript" src="js/carrito.js"></script>
   </head>
-  <body>
+  <body onload="cargarContadorCarrito();">
     <header class="header_pagina">
       <a href="index.html" id="logo_pagina"
         ><img
@@ -25,9 +26,10 @@
         name="buscador"
         placeholder="Buscador"
       />
-      <a href="carrito.html" id="carrito"
-        ><span class="icon-carrito_de_compras_negro"></span
-      ></a>
+      <a href="carrito.html" id="carrito">
+        <span class="icon-carrito_de_compras_negro"></span >
+         <p class="contadorCarrito" id="contadorCarrito"></p>
+      </a>
       <a href="login.html" id="login-usuario"
       ><span class="icon-usuario"></span
     ></a>
@@ -60,32 +62,21 @@
 
         <article class="producto_individual" id="baño">
           <a href="cocina.html" class="link-producto">
-            <img src="img/cateNuevo/Baño.jpg" 
-              alt="imagen del producto"
-              class="imagen-producto"
-            />
+            <img src="img/cateNuevo/Baño.jpg" alt="imagen del producto" class="imagen-producto"/>
             <p class="descripcion-producto">Baño</p>
           </a>
         </article>
 
         <article class="producto_individual" id="cocina">
           <a href="cocina.html" class="link-producto">
-            <img
-              src="img/cateNuevo/Cocina.JPG"
-              alt="imagen del producto"
-              class="imagen-producto"
-            />
+            <img src="img/cateNuevo/Cocina.JPG" alt="imagen del producto" class="imagen-producto"/>
             <p class="descripcion-producto">Cocina</p>
           </a>
         </article>
 
         <article class="producto_individual" id="hogar">
           <a href="cocina.html" class="link-producto">
-            <img
-              src="img/cateNuevo/DecoHogar.JPG"
-              alt="imagen del producto"
-              class="imagen-producto"
-            />
+            <img src="img/cateNuevo/DecoHogar.JPG" alt="imagen del producto" class="imagen-producto"/>
             <p class="descripcion-producto">Hogar</p>
           </a>
         </article>
@@ -95,51 +86,41 @@
         <h2>PRODUCTOS MAS VENDIDOS</h2>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img
-              src="img/CocinaN/grifo.png"
-              alt="imagen del producto"
-              class="imagen-producto-info"
-            />
+            <img src="img/CocinaN/grifo.png" alt="imagen del producto" class="imagen-producto-info" />
           </a>
           <p class="precio_del_producto">$ 1000.0-</p>
           <p class="info_del_producto">
             Grifo Zarpado
-            <span
-              class="icon-carrito_de_compras_negro boton_del_carrito"
-            ></span>
+            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <a href="#" class="boton_del_carrito">
+              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Grifo Zarpado','1','$ 1000.0')"> </span>
+            </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img
-              src="img/cateNuevo/Infusores.jpg"
-              alt="imagen del producto"
-              class="imagen-producto-info"
-            />
+            <img src="img/cateNuevo/Infusores.jpg" alt="imagen del producto" class="imagen-producto-info"/>
           </a>
           <p class="precio_del_producto">$ 650.0-</p>
           <p class="info_del_producto">
             Hombres en jacuzzi
-            <span
-              class="icon-carrito_de_compras_negro boton_del_carrito"
-            ></span>
+            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <a href="#" class="boton_del_carrito">
+              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Hombres en jacuzzi','1','$ 650.0')"> </span>
+            </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img
-              src="img/CocinaN/secaplato.JPG"
-              alt="imagen del producto"
-              class="imagen-producto-info"
-            />
+            <img src="img/CocinaN/secaplato.JPG" alt="imagen del producto" class="imagen-producto-info"/>
           </a>
-
           <p class="precio_del_producto">$ 2500.0-</p>
           <p class="info_del_producto">
             Secaplatos
-            <span
-              class="icon-carrito_de_compras_negro boton_del_carrito"
-            ></span>
+            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <a href="#" class="boton_del_carrito">
+              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Secaplatos','1','$ 2500.0')"> </span>
+            </a>
           </p>
         </article>
       </section>
