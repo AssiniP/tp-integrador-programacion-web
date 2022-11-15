@@ -17,10 +17,17 @@
     if(dataPago == null) //si no es data, inicializa el array vacio
         dataPago = [];
 
+		var dataCars = localStorage.getItem("dataCars");//carga los datos del stored data
+
+		dataCars = JSON.parse(dataCars); //convierte el string en objeto
+		
+		if(dataCars == null) //si no es data, inicializa el array vacio
+		dataCars = [];
+
     function ListAmbas(){
         ListDireccion();
         ListPago();
-        cargarContadorCarrito();
+        document.getElementById('contadorCarrito').innerHTML=dataCars.length;
     }
 	function ListDireccion(){
 		document.getElementById('tblDireccion').innerHTML ="";

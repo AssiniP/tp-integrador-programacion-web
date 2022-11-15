@@ -113,7 +113,6 @@ function loginOK() {
             menssajeError += "<p>El usuario o la contraseña es incorrecto, vuelva a intentarlo </p>";
             document.querySelector(".mensajeError").innerHTML = menssajeError;
             
-            e.defaultPrevented();
            // window.location.href = 'login.html';
         }
     });
