@@ -1,14 +1,12 @@
 
+var selected_index = -1; //Index de seleccion ListCar item
 
+var dataCars = localStorage.getItem("dataCars");//carga los datos del stored data
 
-		var selected_index = -1; //Index de seleccion ListCar item
+dataCars = JSON.parse(dataCars); //convierte el string en objeto
 
-		var dataCars = localStorage.getItem("dataCars");//carga los datos del stored data
-
-		dataCars = JSON.parse(dataCars); //convierte el string en objeto
-
-		if(dataCars == null) //si no es data, inicializa el array vacio
-			dataCars = [];
+if(dataCars == null) //si no es data, inicializa el array vacio
+dataCars = [];
 
 
 
@@ -66,7 +64,6 @@
 	}
 
 
-
 	function DeleteCar(selected_index){
 		dataCars.splice(selected_index, 1);
 		localStorage.setItem("dataCars", JSON.stringify(dataCars));
@@ -87,11 +84,16 @@ function RemoveAllDataCar(){
 
 }
 function pago(){
+	let setPopUpTarjeta=document.querySelector(".popup-form")
+    estadoDelPopup(setPopUpTarjeta)
+}
 
-	document.getElementById("intento").style.display ="flex";
-	document.getElementById("popPagar").style.display ="none";
-
-
+function estadoDelPopup(popup){
+    if(popup.classList.contains("oculto")){
+        popup.classList.remove("oculto")
+    }else{
+        popup.classList.add("oculto")
+    }
 }
 
 
