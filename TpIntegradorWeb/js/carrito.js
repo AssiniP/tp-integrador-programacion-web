@@ -84,6 +84,14 @@ function RemoveAllDataCar(){
 	for(var i in dataCars){
 		dataCars.splice(i-1, 1);
 	}
+
+}
+function pago(){
+
+	document.getElementById("intento").style.display ="flex";
+	document.getElementById("popPagar").style.display ="none";
+
+
 }
 
 

@@ -18,15 +18,21 @@ let coleccionLocal = [];
 let menssajeError="";
 
 // escucha el evento click de guardad en crearusuario.html
-guardar.addEventListener("click",(e)=>{
-    if(validarPass()&&validarEmail()){
-        agregarAColeccion();
-        window.location.href = 'login.html';
-    }else{
-        e.defaultPrevented();
-    }
-});
-
+//guardar.addEventListener("click",(e)=>{
+//    validarPass();
+  //  if(valido){
+ //       validarEmail();
+ //       if (valido){
+ //           agregarAColeccion();
+ //       } else{
+//            document.querySelector(".mensajeError").innerHTML = mensajeDeError;
+//
+  //      }
+    //}
+   // document.querySelector(".mensajeError").innerHTML = mensajeDeError;
+   
+//});
+//
 
 
 
@@ -56,38 +62,46 @@ function agregarAColeccion() {
     localStorage.setItem("list", JSON.stringify(coleccionLocal));
 }
 
-function validarEmail(event) {
-//    agregarAColeccion();
-    localStorage.setItem("list", JSON.stringify(coleccionLocal));
-    valido = false;
-    if(expReg.test(email.value)){
+// function validarEmail(event) {
+// //    agregarAColeccion();
+//     localStorage.setItem("list", JSON.stringify(coleccionLocal));
+//     valido = false;
+//     if(expReg.test(email.value)){
         
-        valido =true;
-    }else {
-       alert("Email no valido: " + email.value);
-       e.defaultPrevented();
-    }
-    return valido;
-}
+//         valido =true;
+//     }else {
+//        alert("Email no valido: " + email.value);
+//        e.defaultPrevented();
+//     }
+//     return valido;
+// }
 
 function validarPass() {
     let ps= document.querySelector("#password");
     let rps = document.querySelector("#re-password");
-    valido = false;
+    
     if(expRegPass.test(ps.value)){
-        if(ps.value == rps.value){
-            valido = true;
+        if(ps.value == rps.value ){
+            if(expReg.test(email.value)){
+            agregarAColeccion();
+            window.location.href = 'login.html';
+            }
+            else{
+                menssajeError += "el mail no es correcto,volver a ingresar"
+            }
         }else {
-            menssajeError=+"La contraseña debe coincidir con la confirmacion. ";
-            e.defaultPrevented();
+            menssajeError += "<p>La contraseña debe coincidir con la confirmacion. </p>";
+            
         }
     }else{
-        menssajeError=+"Contraseña no segura, 6 caracteres minimos, letras y/o números, minúscula o mayúscula.";
-        e.defaultPrevented();
+        menssajeError += "<br> <p> Contraseña no segura, 6 caracteres minimos, comenzar con mayuscula, letras y/o números, minúscula o mayúscula.</p>";
+       
         
     }
-    return valido;
+    document.querySelector(".mensajeError").innerHTML = menssajeError;
+    
 }
+  
 
 
 function loginOK() {    
@@ -96,7 +110,9 @@ function loginOK() {
         if(element.usuario == userLogin.value && element.pass == passwordLogin.value){
             window.location.href = 'miCuenta.html';
         }else {
-            menssajeError=+"El usuario o la contraseña es incorrecto, vuelva a intentarlo";
+            menssajeError += "<p>El usuario o la contraseña es incorrecto, vuelva a intentarlo </p>";
+            document.querySelector(".mensajeError").innerHTML = menssajeError;
+            
             e.defaultPrevented();
            // window.location.href = 'login.html';
         }
