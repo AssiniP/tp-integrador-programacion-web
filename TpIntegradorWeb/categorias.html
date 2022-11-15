@@ -7,7 +7,6 @@
     <title>Categorias</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
-    <script type="text/javascript" src="js/carrito.js"></script>
   </head>
   <body onload="cargarContadorCarrito();">
     <header class="header_pagina">
@@ -21,15 +20,20 @@
       <div class="buscador-container">
         <span class="icon-lupa" id="lupa"></span>
         <span class="icon-cruz oculto" id="cruz"></span>
-        <input type="search" id="buscador" name="buscador" placeholder="Buscador" />
+        <input
+          type="search"
+          id="buscador"
+          name="buscador"
+          placeholder="Buscador"
+        />
       </div>
       <a href="carrito.html" id="carrito">
-        <span class="icon-carrito_de_compras_negro"></span >
-         <p class="contadorCarrito" id="contadorCarrito"></p>
+        <span class="icon-carrito_de_compras_negro"></span>
+        <p class="contadorCarrito" id="contadorCarrito"></p>
       </a>
       <a href="login.html" id="login-usuario"
-      ><span class="icon-usuario"></span
-    ></a>
+        ><span class="icon-usuario"></span
+      ></a>
     </header>
     <nav>
       <ul>
@@ -150,7 +154,7 @@
         <img src="img/logo_empresa.png" alt="logo" class="logo-footer" />
         <span class="icon-reloj">
           <p>Lunes a Sabado</p>
-        </span> 
+        </span>
         <p>de 8 a 14hs. y de 16 a 20hs.</p>
       </div>
       <div id="datos_del_grupo">
@@ -181,5 +185,6 @@
       </div>
     </footer>
     <script src="js/buscador.js"></script>
+    <script type="text/javascript" src="js/carrito.js"></script>
   </body>
 </html>

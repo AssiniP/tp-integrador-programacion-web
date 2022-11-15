@@ -7,7 +7,6 @@
     <title>Cocina</title>
     <link rel="stylesheet" href="css/comun.css" />
     <link rel="stylesheet" href="css/productos.css" />
-    <script type="text/javascript" src="js/carrito.js"></script>
   </head>
   <body onload="cargarContadorCarrito();">
     <header class="header_pagina">
@@ -29,12 +28,12 @@
         />
       </div>
       <a href="carrito.html" id="carrito">
-        <span class="icon-carrito_de_compras_negro"></span >
-         <p class="contadorCarrito" id="contadorCarrito"></p>
+        <span class="icon-carrito_de_compras_negro"></span>
+        <p class="contadorCarrito" id="contadorCarrito"></p>
       </a>
       <a href="login.html" id="login-usuario"
-      ><span class="icon-usuario"></span
-    ></a>
+        ><span class="icon-usuario"></span
+      ></a>
     </header>
     <nav>
       <ul>
@@ -50,126 +49,280 @@
         <h2>COCINA</h2>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/grifo.png" alt="imagen del producto" class="imagen-producto-info"/>
+            <img
+              src="img/CocinaN/grifo.png"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 1000.0-</p>
           <p class="info_del_producto">
             Grifo Zarpado
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto"  value="1" min="1" max="99" />
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Grifo Zarpado','1','$ 1000.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Grifo Zarpado','1','$ 1000.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
 
         <article class="producto_individual_mas_vendidos">
-          <a href="seleccionproducto.html" >
-            <img src="img/cateNuevo/Infusores.jpg" alt="imagen del producto" class="imagen-producto-info" /></a>
+          <a href="seleccionproducto.html">
+            <img
+              src="img/cateNuevo/Infusores.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+          /></a>
           <p class="precio_del_producto">$ 650.0-</p>
           <p class="info_del_producto">
             Hombres en jacuzzi
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto"  value="1" min="1" max="99" />
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Hombres en jacuzzi','1','$ 650.0')"> </span>
-            </a>
-          </p>
-        </article>
-        <article class="producto_individual_mas_vendidos">
-          <a href="seleccionproducto.html" >
-            <img src="img/CocinaN/secaplato.JPG" alt="imagen del producto" class="imagen-producto-info" />
-          </a>
-          <p class="precio_del_producto">$ 2500.0-</p>
-          <p class="info_del_producto"> Secaplatos
-            <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto"  value="1" min="1" max="99"/>
-            <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Secaplatos','1','$ 2500.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Hombres en jacuzzi','1','$ 650.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/cepillDeMano.JPG" alt="imagen del producto" class="imagen-producto-info"/>
+            <img
+              src="img/CocinaN/secaplato.JPG"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
+          </a>
+          <p class="precio_del_producto">$ 2500.0-</p>
+          <p class="info_del_producto">
+            Secaplatos
+            <label for="cantidad_de_producto"></label>
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
+            <a href="#" class="boton_del_carrito">
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Secaplatos','1','$ 2500.0')"
+              >
+              </span>
+            </a>
+          </p>
+        </article>
+        <article class="producto_individual_mas_vendidos">
+          <a href="seleccionproducto.html">
+            <img
+              src="img/CocinaN/cepillDeMano.JPG"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 1500.0-</p>
           <p class="info_del_producto">
             Cepillo de mano
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto"  value="1"  min="1" max="99" />
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Cepillo de mano','1','$ 1500.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Cepillo de mano','1','$ 1500.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/cepilloFlor.jpg" alt="imagen del producto" class="imagen-producto-info"/>
+            <img
+              src="img/CocinaN/cepilloFlor.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 1800.0-</p>
           <p class="info_del_producto">
             Cepillo flor
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Cepillo flor','1','$ 1800.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Cepillo flor','1','$ 1800.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/cepilloOlla.jpg" alt="imagen del producto" class="imagen-producto-info" />
+            <img
+              src="img/CocinaN/cepilloOlla.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 1700.0-</p>
           <p class="info_del_producto">
             Cepillo Olla
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Cepillo Olla','1','$ 1700.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Cepillo Olla','1','$ 1700.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/coladorPlegableSilicona.jpg" alt="imagen del producto" class="imagen-producto-info" />
+            <img
+              src="img/CocinaN/coladorPlegableSilicona.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 2500.0-</p>
           <p class="info_del_producto">
             Colador Silicona
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Colador Silicona','1','$ 2500.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Colador Silicona','1','$ 2500.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/escurridorSilicona.jpg" alt="imagen del producto" class="imagen-producto-info"/>
+            <img
+              src="img/CocinaN/escurridorSilicona.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 1500.0-</p>
           <p class="info_del_producto">
             Escurridor Silicona
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Escurridor Silicona','1','$ 1500.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Escurridor Silicona','1','$ 1500.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
         <article class="producto_individual_mas_vendidos">
           <a href="seleccionproducto.html">
-            <img src="img/CocinaN/dispenser.jpg" alt="imagen del producto" class="imagen-producto-info" />
+            <img
+              src="img/CocinaN/dispenser.jpg"
+              alt="imagen del producto"
+              class="imagen-producto-info"
+            />
           </a>
           <p class="precio_del_producto">$ 900.0-</p>
           <p class="info_del_producto">
             Dispenser
             <label for="cantidad_de_producto"></label>
-            <input type="number" name="cantidad_de_producto" id="cantidad_de_producto" value="1" min="1" max="99"/>
+            <input
+              type="number"
+              name="cantidad_de_producto"
+              id="cantidad_de_producto"
+              value="1"
+              min="1"
+              max="99"
+            />
             <a href="#" class="boton_del_carrito">
-              <span class="icon-carrito_de_compras_negro" alt="AgregarCarrito" class="AgregarCarrito"  onClick="AddCar('Dispenser','1','$ 900.0')"> </span>
+              <span
+                class="icon-carrito_de_compras_negro"
+                alt="AgregarCarrito"
+                class="AgregarCarrito"
+                onClick="AddCar('Dispenser','1','$ 900.0')"
+              >
+              </span>
             </a>
           </p>
         </article>
@@ -209,5 +362,6 @@
         </a>
       </div>
     </footer>
+    <script type="text/javascript" src="js/carrito.js"></script>
   </body>
 </html>
