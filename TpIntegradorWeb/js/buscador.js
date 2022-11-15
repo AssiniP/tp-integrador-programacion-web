@@ -9,7 +9,7 @@ const lupa = document.getElementById("lupa");
 cruz.addEventListener("click", ()=>{
     lupa.classList.remove("oculto")
     queElIconoSeActualize();
-    buscador.value;
+    buscador.value = "";
     categorias.forEach(string => resetearLaVisualizacionDeCategorias(string));
 })
 
