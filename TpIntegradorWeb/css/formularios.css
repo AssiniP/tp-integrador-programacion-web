@@ -91,9 +91,8 @@ button:hover {
 
 /*Popup*/
 .popup-form{
-	display: none;
+	/*display: none;*/
 	flex-direction: column;
-	
 	background-image: url(../img/CocinaN/fondo.jpg);
 	border-style:double;
 	border-color: blueviolet;

@@ -14,16 +14,25 @@
   <body onload="ListAmbas();">
     <header class="header_pagina">
       <a href="index.html" id="logo_pagina"
-        ><img src="img/logo_empresa.png" alt="logo de la pagina" class="logo-empresa" /></a>
+        ><img
+          src="img/logo_empresa.png"
+          alt="logo de la pagina"
+          class="logo-empresa"
+      /></a>
       <label for="buscador"></label>
       <div class="buscador-container">
         <span class="icon-lupa" id="lupa"></span>
         <span class="icon-cruz oculto" id="cruz"></span>
-        <input type="search" id="buscador" name="buscador" placeholder="Buscador" />
+        <input
+          type="search"
+          id="buscador"
+          name="buscador"
+          placeholder="Buscador"
+        />
       </div>
       <a href="carrito.html" id="carrito">
-        <span class="icon-carrito_de_compras_negro"></span >
-         <p class="contadorCarrito" id="contadorCarrito"></p>
+        <span class="icon-carrito_de_compras_negro"></span>
+        <p class="contadorCarrito" id="contadorCarrito"></p>
       </a>
       <a href="login.html" id="login-usuario">
         <span class="icon-usuario"></span>
@@ -47,20 +56,39 @@
       </section>
       <div class="container-button">
         <h3>Mis Direcciones</h3>
-        <input type="button" class="btn-agregar btn-agregar-direccion" name="btn-agregar-direccion" id="btn-agregar-direccion" value="Agregar"  onclick="mostrarDireccion()">
+        <input
+          type="button"
+          class="btn-agregar btn-agregar-direccion"
+          name="btn-agregar-direccion"
+          id="btn-agregar-direccion"
+          value="Agregar"
+          onclick="mostrarDireccion()"
+        />
       </div>
       <div class="grid space-top tabla-de-carrito">
         <div class="c6 contenedor-tabla">
-          <table id="tblDireccion" class="table">
-          </table>
-        </div> 
+          <table id="tblDireccion" class="table"></table>
+        </div>
       </div>
-   
-      <div class="popup-form pop-up-direccion" id="pop-up-direccion" style="display:none" >
-        <form class="formularioLogin" action="" method="post" id="formularioDireccion"  >
+
+      <div class="popup-form pop-up-direccion oculto" id="pop-up-direccion">
+        <form
+          class="formularioLogin"
+          action=""
+          method="post"
+          id="formularioDireccion"
+        >
           <h2>Nueva direccion <span class="icon-home"></span></h2>
           <p class="loginOrdenado">Alias:</p>
-          <input type="text" name="alias" clas="alias-dire" id="alias-dire" placeholder="Alias" value="" required />
+          <input
+            type="text"
+            name="alias"
+            clas="alias-dire"
+            id="alias-dire"
+            placeholder="Alias"
+            value=""
+            required
+          />
           <br />
           <label for="provincia">Provincia</label>
           <select id="provincia" name="provincia">
@@ -98,51 +126,128 @@
           </select>
           <br />
           <p class="loginOrdenado">Direccion:</p>
-          <input type="text" name="direccion" class="direccion" id="direccion" placeholder="Direccion" value="" required />
+          <input
+            type="text"
+            name="direccion"
+            class="direccion"
+            id="direccion"
+            placeholder="Direccion"
+            value=""
+            required
+          />
           <br />
           <p class="loginOrdenado">Telefono:</p>
-          <input type="text" name="telefono" class="telefono" id="telefono" placeholder="Telefono" value="" />
+          <input
+            type="text"
+            name="telefono"
+            class="telefono"
+            id="telefono"
+            placeholder="Telefono"
+            value=""
+          />
           <br />
           <p class="loginOrdenado">Piso:</p>
-          <input type="text" name="piso" class="piso" id="piso" placeholder="Piso"  value=""  />
+          <input
+            type="text"
+            name="piso"
+            class="piso"
+            id="piso"
+            placeholder="Piso"
+            value=""
+          />
           <p class="loginOrdenado pisoDto">Dto:</p>
-          <input type="text" name="dto" class="dto" id="dto" placeholder="Dto" value=""  />
+          <input
+            type="text"
+            name="dto"
+            class="dto"
+            id="dto"
+            placeholder="Dto"
+            value=""
+          />
           <div class="popup-button">
             <input type="submit" value="guardar" />
           </div>
-          
         </form>
       </div>
 
       <div class="container-button">
         <h3>Metodos de pago</h3>
-        <input type="button" class="btn-agregar btn-agregar-tarjeta" name="btn-agregar-tarjeta" id="btn-agregar-tarjeta" value="Agregar"  onclick="mostrarTarjeta()">
-      </div>
- 
-      <div class="grid space-top tabla-de-carrito">
-        <div class="c6 contenedor-tabla">
-          <table id="tblPago" class="table">
-          </table>
-        </div> 
+        <input
+          type="button"
+          class="btn-agregar btn-agregar-tarjeta"
+          name="btn-agregar-tarjeta"
+          id="btn-agregar-tarjeta"
+          value="Agregar"
+          onclick="mostrarTarjeta()"
+        />
       </div>
 
-      <div class="popup-form pop-up-tarjeta" id="pop-up-tarjeta" style="display:none" >
-        <form class="formularioLogin" action="" method="post" id="formularioTarjeta" >
+      <div class="grid space-top tabla-de-carrito">
+        <div class="c6 contenedor-tabla">
+          <table id="tblPago" class="table"></table>
+        </div>
+      </div>
+
+      <div class="popup-form pop-up-tarjeta oculto" id="pop-up-tarjeta">
+        <form
+          class="formularioLogin"
+          action=""
+          method="post"
+          id="formularioTarjeta"
+        >
           <h2>Nueva Tarjeta <span class="icon-billete_negro"></span></h2>
           <p class="loginOrdenado">Alias:</p>
-          <input type="text" name="alias" placeholder="Alias" id="alias" value="" required />
+          <input
+            type="text"
+            name="alias"
+            placeholder="Alias"
+            id="alias"
+            value=""
+            required
+          />
           <p class="loginOrdenado">Numero de Tarjeta:</p>
-          <input type="text" name="nroTarjeta" placeholder="Numero de Tarjeta" id="nroTarjeta" value="" required />
+          <input
+            type="text"
+            name="nroTarjeta"
+            placeholder="Numero de Tarjeta"
+            id="nroTarjeta"
+            value=""
+            required
+          />
 
           <div class="datostarjeta">
             <p class="loginOrdenado">Codigo:</p>
-            <input type="text" name="codigo" placeholder="Cdo" id="codigoTarjeta" value="" class="codigoSeguridad" required />
+            <input
+              type="text"
+              name="codigo"
+              placeholder="Cdo"
+              id="codigoTarjeta"
+              value=""
+              class="codigoSeguridad"
+              required
+            />
             <p class="loginOrdenado">Vencimiento:</p>
-            <input type="text" name="vto" placeholder="Vto" id="vencimientoTarjeta" value="" class="Vencimiento" required />
+            <input
+              type="text"
+              name="vto"
+              placeholder="Vto"
+              id="vencimientoTarjeta"
+              value=""
+              class="Vencimiento"
+              required
+            />
           </div>
 
           <p class="loginOrdenado">Nombre Titular:</p>
-          <input type="text" name="nomtitular" placeholder="Nombre Titular" id="titularTarjeta"  value="" class="nomDeTitular" required/>
+          <input
+            type="text"
+            name="nomtitular"
+            placeholder="Nombre Titular"
+            id="titularTarjeta"
+            value=""
+            class="nomDeTitular"
+            required
+          />
 
           <div class="popup-button">
             <input type="submit" puvalue="guardar" />

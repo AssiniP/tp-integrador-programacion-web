@@ -2,22 +2,24 @@ const regexNroTarjeta = /^[0-9]{10}$/;
 const formularioTarjeta = document.querySelector("#formularioTarjeta");
 const formularioDireccion = document.querySelector("#formularioDireccion");
 
-
 formularioTarjeta.addEventListener("submit", (e)=>{
     e.preventDefault();
     validarCamposDelFormulario();
 })
+
 formularioDireccion.addEventListener("submit", (e)=>{
     e.preventDefault();
     validarDatosDireccion();
 })
+
 function validarDatosDireccion(){
     let aliasDeAliasDire = document.querySelector("#alias-dire").value;
     let aliasDeDireccion = document.querySelector("#direccion").value;
     AddDireccion(aliasDeAliasDire,aliasDeDireccion);
     ListDireccion();
-    ocultarDireccion();
+    mostrarDireccion();
 }
+
 function validarCamposDelFormulario(){
     /* numero de tarjeta no puede todos 0000000000
     el numero de tarjeta debe tener 10 digitos:
@@ -53,7 +55,7 @@ function validarCamposDelFormulario(){
         formularioTarjeta.submit();
         AddPago(aliasDeTarjeta);
         ListPago();
-        ocultarTarjeta();
+        mostrarTarjeta();
     }
 }
 
@@ -73,6 +75,24 @@ function calcularSiEsUnNumeroParOImpar(numero){
 }
 
 function mostrarDireccion(){
+    let setPopUpDireccion=document.querySelector("#pop-up-direccion")
+    estadoDelPopup(setPopUpDireccion)
+}
+
+function mostrarTarjeta(){
+    let setPopUpTarjeta=document.querySelector("#pop-up-tarjeta")
+    estadoDelPopup(setPopUpTarjeta)
+}
+
+function estadoDelPopup(popup){
+    if(popup.classList.contains("oculto")){
+        popup.classList.remove("oculto")
+    }else{
+        popup.classList.add("oculto")
+    }
+}
+
+/*function mostrarDireccion(){
     let setPopUpDireccion=document.querySelector("#pop-up-direccion")
     setPopUpDireccion.style.display = '';
 
@@ -95,4 +115,4 @@ function ocultarTarjeta(){
     let setPopUpTarjeta=document.querySelector("#pop-up-tarjeta")
     setPopUpTarjeta.style.display = 'none';
 
-}
+}*/
