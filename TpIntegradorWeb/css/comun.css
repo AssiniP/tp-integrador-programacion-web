@@ -99,8 +99,16 @@
     padding: 0;
 }
 
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
+
+}
+
 main{
     background-color: #E09DF2;
+    flex: 1;
 }
 
 h1{
@@ -294,5 +302,5 @@ footer{
   padding: 0.2em ;
   font-size: large;
   font-weight: bold;
-
+  
 }
