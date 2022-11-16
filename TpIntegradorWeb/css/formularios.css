@@ -1,19 +1,18 @@
-
 /* formulario*/
 .formulario {
-	background:  white;
+	background: white;
 	padding: 1em;
 	border-radius: 0.2em;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
- }
+}
 
- .container-usuario{
-	background:  white;
+.container-usuario {
+	background: white;
 	background-image: url(../img/CocinaN/fondo.jpg);
 	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+	font-weight: 400;
 	padding: 1em;
 	border-radius: 0.2em;
 	display: flex;
@@ -21,80 +20,82 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
- }
+}
 
- .container-usuario input{
+.container-usuario input {
 	width: 70%;
- }
+}
 
 .formulario input {
 	display: block;
 }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 1em 1.2em;
-  margin: 0.5em 0em;
-  display: inline-block;
-  box-sizing: border-box;
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 1em 1.2em;
+	margin: 0.5em 0em;
+	display: inline-block;
+	box-sizing: border-box;
 }
-button  {
+
+button {
 	width: 100%;
 	margin: 0em auto;
 	padding: 1em;
 	border-radius: 0.2em;
 	font-size: 1em;
-	border:1px solid #000000;
+	border: 1px solid #000000;
 	color: #000000;
 	background: none;
 	cursor: pointer;
 }
 
-.containe-button a{
+.containe-button a {
 	border-radius: 0.2em;
 	width: 100%;
 	margin: 0em auto;
 	padding: 1em;
-	border:1px solid #000000;
+	border: 1px solid #000000;
 	color: #000000;
 	font-style: normal;
-  }
+}
 
-  
-.containe-button{
-  text-align: center;
+
+.containe-button {
+	text-align: center;
 }
 
 button:hover {
-  opacity: 0.8;
+	opacity: 0.8;
 }
 
 .imgcontainer {
-    text-align: center;
+	text-align: center;
 	padding: 1em;
 }
 
 .container {
-  padding: 1em;
+	padding: 1em;
 }
 
-.datostarjeta{
+.datostarjeta {
 	display: flex;
 	flex-direction: row;
 	padding: 0.2em;
 }
 
-.datostarjeta p{
+.datostarjeta p {
 	height: 1em;
 	padding: 1em 0.5em 0.5em 0.5em;
 }
 
 /*Popup*/
-.popup-form{
+.popup-form {
 	/*display: none;*/
 	flex-direction: column;
 	background-image: url(../img/CocinaN/fondo.jpg);
-	border-style:double;
+	border-style: double;
 	border-color: blueviolet;
 	border-radius: 0.2em;
 	max-width: 30%;
@@ -106,10 +107,11 @@ button:hover {
 	font-family: 'Open Sans', sans-serif;
 }
 
-#popPagar{
+#popPagar {
 	display: inline-block;
 }
-.popup-form input{
+
+.popup-form input {
 	padding: 1em;
 	margin: 0.4em 0em;
 	border-radius: 0.2em;
@@ -121,28 +123,24 @@ form {
 
 }
 
-.popup-button{
+.popup-button {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	height: auto;
 }
 
-.popup-button input{
+.popup-button input {
 	cursor: pointer;
 }
 
-.popup-button a{
+.popup-button a {
 	border-radius: 0.3em;
 	padding: 0.6em 0.5em;
 	font-size: 1em;
 	text-decoration: none;
 	font-style: normal;
 	text-align: center;
-	border:1px solid #000000;
+	border: 1px solid #000000;
 	color: #000000;
-  }
-
-
-
-  
+}
