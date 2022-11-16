@@ -12,14 +12,12 @@ if (dataCars == null) //si no es data, inicializa el array vacio
 function ListCar() {
 	//document.getElementById('tblList').innerHTML = "";
 	var datos = " ";
-	//datos += "<table>" ;
-	//datos += "<colgroup> <col span=""3""> <col span= ""1"" style=""border: none""> </colgroup>";
 	datos += "<thead>";
 	datos += "<tr>";
-	datos += "	<th>Producto</th>";
+	datos += '	<th>Producto</th>';
 	datos += "	<th>Cantidad</th>";
 	datos += "	<th>Precio</th>";
-	datos += "	<th></th>";
+	datos += "	<th background-image: none></th>";
 	datos += "</tr>";
 	datos += "</thead>";
 	datos += "<tbody>";
@@ -35,11 +33,8 @@ function ListCar() {
 
 	}
 	datos += "</tbody>";
-	//datos += "</table>";
 	document.getElementById('tblList').innerHTML = datos;
 	cargarContadorCarrito();
-
-	console.log('entro en el ListCarar')
 
 }
 
@@ -106,9 +101,7 @@ function estadoDelPopup(popup) {
 
 //tarjeta
 try{
-    const checkboxTarjeta = document.getElementById("checkTarjeta")
-    console.log(checkboxTarjeta)
-    
+    const checkboxTarjeta = document.getElementById("checkTarjeta")    
     checkboxTarjeta.addEventListener("change", (e) => {
         let nuevaTarjeta = document.querySelector(".nueva-tarjeta")
         console.log(nuevaTarjeta)
