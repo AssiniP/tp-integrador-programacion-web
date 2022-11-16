@@ -58,7 +58,7 @@
     height: auto;
     border-radius: 2em;
     align-items: center;
-    position: relative;
+    position: relative; 
 }
 
 .boton_de_categorias{
