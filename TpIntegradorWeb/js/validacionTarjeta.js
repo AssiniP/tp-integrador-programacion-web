@@ -66,7 +66,7 @@ function validarCamposDelFormulario() {
 
 function calcularSiLaSumatoriaDeNumerosEsParOImpar(numeroDeTarjeta) {
     let sumatoria = 0;
-    for (let i = 0; i < numeroDeTarjeta.length; i++) {
+    for (let i = 0; i < numeroDeTarjeta.length-1; i++) {
         sumatoria += parseInt(numeroDeTarjeta.charAt(i))
     }
     let resultado = calcularSiEsUnNumeroParOImpar(sumatoria)
