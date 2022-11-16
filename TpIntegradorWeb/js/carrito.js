@@ -34,8 +34,7 @@ function ListCar() {
 		datos += "	<td>" + cli.Producto + "</td>";
 		datos += "	<td>" + cli.Cantidad + "</td>";
 		datos += "	<td>" + cli.Precio + "</td>";
-		datos += ' <td><span class="icon-bin" alt="Delete" class="btnDelete"  onClick="DeleteCar(\'' + i + '\');"/> ';
-		datos += ' <span class="icon-bin"  alt="Edit" "class="btnEdit"  onClick="mEditarCar(\''+i+'\');"/>';
+		datos += ' <td><span class="icon-bin" alt="Delete" class="btnDelete"  onClick="DeleteCar(\'' + i + '\');"/> </td>';
 		datos += "</tr>";
 
 	}
@@ -53,14 +52,12 @@ function cargarContadorCarrito() {
 }
 
 
-function AddCar(producto, campoCantidad, precio) {
-	alert(campoCantidad);
-	let cantidadDelProducto = getElementById(campoCantidad).value;
-	alert(cantidadDelProducto);
+function AddCar(producto,cantidad, precio) {
+	let cantidadDelProducto = document.getElementById(String(producto)).value;
 	console.log(cantidadDelProducto)
 	if (cantidadDelProducto > 99) {
 		cantidadDelProducto = 99;
-		document.getElementsByClassName(String(campoCantidad)).value = 99;
+		document.getElementById(String(producto)).value = 99;
 	}
 	let precioTotal = parseInt(precio) * cantidadDelProducto;
 	console.log(precioTotal)
@@ -82,17 +79,6 @@ function DeleteCar(selected_index) {
 	dataCars.splice(selected_index, 1);
 	localStorage.setItem("dataCars", JSON.stringify(dataCars));
 	ListCar();
-}
-
-
-function mEditarCar(selected_index){
-	var cli = JSON.parse(dataCars[selected_index]);
-	valorOriginal=parseInt(cli.Cantidad);
-	valorOrigina+=1;
-
-	cli.Cantidad = valorOrigina.toString();
-		
-		ListCar();
 }
 
 function GuardarCar() {
