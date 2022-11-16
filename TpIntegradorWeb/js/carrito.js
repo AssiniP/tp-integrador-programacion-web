@@ -104,13 +104,3 @@ function estadoDelPopup(popup) {
 		popup.classList.add("oculto")
 	}
 }
-
-//tarjeta
-const checkboxTarjeta = document.getElementById("checkTarjeta")
-console.log(checkboxTarjeta)
-
-checkboxTarjeta.addEventListener("change", (e) => {
-	let nuevaTarjeta = document.querySelector(".nueva-tarjeta")
-	console.log(nuevaTarjeta)
-	estadoDelPopup(nuevaTarjeta);
-})

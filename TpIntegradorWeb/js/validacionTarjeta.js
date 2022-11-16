@@ -7,10 +7,15 @@ formularioTarjeta.addEventListener("submit", (e) => {
     validarCamposDelFormulario();
 })
 
+try {
 formularioDireccion.addEventListener("submit", (e) => {
     e.preventDefault();
     validarDatosDireccion();
 })
+}
+catch{
+
+}
 
 function validarDatosDireccion() {
     let aliasDeAliasDire = document.querySelector("#alias-dire").value;
@@ -92,27 +97,20 @@ function estadoDelPopup(popup) {
     }
 }
 
-/*function mostrarDireccion(){
-    let setPopUpDireccion=document.querySelector("#pop-up-direccion")
-    setPopUpDireccion.style.display = '';
+
+//tarjeta
+try{
+    const checkboxTarjeta = document.getElementById("checkTarjeta")
+    console.log(checkboxTarjeta)
+    
+    checkboxTarjeta.addEventListener("change", (e) => {
+        let nuevaTarjeta = document.querySelector(".nueva-tarjeta")
+        console.log(nuevaTarjeta)
+        estadoDelPopup(nuevaTarjeta);
+    })
+
+}
+catch{
 
 }
 
-function mostrarTarjeta(){
-    let setPopUpTarjeta=document.querySelector("#pop-up-tarjeta")
-    setPopUpTarjeta.style.display = '';
-
-}
-
-
-function ocultarDireccion(){
-    let setPopUpDireccion=document.querySelector("#pop-up-direccion")
-    setPopUpDireccion.style.display = 'none';
-
-}
-
-function ocultarTarjeta(){
-    let setPopUpTarjeta=document.querySelector("#pop-up-tarjeta")
-    setPopUpTarjeta.style.display = 'none';
-
-}*/
