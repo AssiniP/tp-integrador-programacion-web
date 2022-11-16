@@ -27,6 +27,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+.icon-hamburger_icon:before {
+  content: "\e908";
+}
+.icon-check_negro:before {
+  content: "\e900";
+}
+.icon-carrito_de_compras_negro:before {
+  content: "\e901";
+}
+.icon-icono_github:before {
+  content: "\e902";
+}
+.icon-icono_instagram:before {
+  content: "\e903";
+}
+.icon-billete_negro:before {
+  content: "\e904";
+}
+.icon-plus_negro:before {
+  content: "\e905";
+}
+.icon-tacho_de_basura_negro:before {
+  content: "\e906";
+}
 .icon-usuario:before {
   content: "\e971";
 }
@@ -69,27 +95,8 @@
 .icon-whatsapp:before {
   content: "\ea93";
 }
-.icon-check_negro:before {
-  content: "\e900";
-}
-.icon-carrito_de_compras_negro:before {
-  content: "\e901";
-}
-.icon-icono_github:before {
-  content: "\e902";
-}
-.icon-icono_instagram:before {
-  content: "\e903";
-}
-.icon-billete_negro:before {
-  content: "\e904";
-}
-.icon-plus_negro:before {
-  content: "\e905";
-}
-.icon-tacho_de_basura_negro:before {
-  content: "\e906";
-}
+
+
 
 /* Fin del icomoon */
 
@@ -304,4 +311,23 @@ footer{
   font-size: large;
   font-weight: bold;
   
+}
+
+@media screen and (max-width: 600px){
+  body{
+    font-size:60%;
+  }
+  .header-pagina{
+    width: 10%;
+  }
+  .buscador-container{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+  body{
+    font-size:80%
+  }
 }
