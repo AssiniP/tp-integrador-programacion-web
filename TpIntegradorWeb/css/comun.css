@@ -15,7 +15,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -257,7 +257,7 @@ footer{
 .icon-reloj{
     font-size: 1.5em;
     color: #2c2727;
-    position: absolute;
+    /* position: absolute; */
     right: 210px;
 }
 
