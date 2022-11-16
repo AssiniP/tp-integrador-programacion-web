@@ -281,7 +281,8 @@ footer{
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: 'Manrope', sans-serif
+  font-family: 'Manrope', sans-serif;
+  width: 40%;
 }
 
 #redes_sociales {
@@ -299,35 +300,117 @@ footer{
 
 .contadorCarrito{
   position:absolute;
-  bottom: 2.2em;
-  left: 1em;
-  width: 30px;
-  height: 30px;
+  bottom: 2em;
+  left: 2em;
+  width: 1.5em;
+  height: 1.5em;
   text-align: center;
   border: #000 2px solid;
   border-radius: 50%;
-  
-  padding: 0.2em ;
   font-size: large;
   font-weight: bold;
-  
 }
 
 @media screen and (max-width: 600px){
   body{
     font-size:60%;
   }
-  .header-pagina{
-    width: 10%;
+  .header_pagina{
+    width: 100%;
+    padding: 1em;
   }
   .buscador-container{
-    width: 100%;
+    width: 50%;
   }
-  
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  #logo_pagina{
+    width: 15%;
+  }
+
+  nav li{
+    width: 100%;
+    border: 1px solid #489bad;
+    border-radius: 0;
+    text-align: left;
+  }
+
+  #contadorCarrito{
+    bottom: 2em;
+    left: 2em;
+    font-size: 0.5em;
+    border: none;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 0.5em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  #redes_sociales{
+    font-size: 1em;
+  }
+  #info_tienda{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  #datos_del_grupo{
+    display: none;
+  }
+  .logo-footer{
+    max-width: 50%;
+
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px){
   body{
     font-size:80%
   }
+  .header_pagina{
+    width: 100%;
+    padding: 1em;
+  }
+  .buscador-container{
+    width: 50%;
+  }
+
+  #logo_pagina{
+    width: 15%;
+  }
+
+  #contadorCarrito{
+    bottom: 2em;
+    left: 2em;
+    font-size: 0.5em;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 0.5em;
+    font-size: 1.2em;
+  }
+  #redes_sociales{
+    font-size: 1em;
+  }
+  #info_tienda{
+    width: 50%;
+  }
+  .logo-footer{
+    max-width: 20%;
+  }
+  #datos_del_grupo{
+    display: none;
+  }
+  
 }
