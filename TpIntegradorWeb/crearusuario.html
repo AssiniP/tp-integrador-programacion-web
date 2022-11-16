@@ -31,12 +31,10 @@
         <input type="text" placeholder="Ingrese el Email" name="email" id="email" required />
         <p class="mensajeError" id="mensajeError"></p>  
       </article>
-      <div class="buttom-box">
-        <a id="btn-cancel" href="login.html">Cancel</a>
+      <div class="buttom-box botonPagarPrincipal">
+        <input type="button" name="Cancel" id="btn-cancel" value="Cancelar" onclick=closeCrearUsuario()>
         <input type="button" name="Aceptar" id="btn-save" value="Guardar" onclick=validarPass()>
-        <p class = "mensajeError" id="mensajeError"></p>
     </div>
-    
     </form>
   </main>
       <script src="js/login.js"></script>

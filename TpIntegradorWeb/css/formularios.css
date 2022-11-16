@@ -162,7 +162,7 @@ form {
 	justify-content: center;
 }
 
-#popPagar{
+#popPagar, #btn-cancel, #btn-save{
 	padding: 1em 2em 1em 2em;
 	text-align: center;
 	margin-top: 1em;

@@ -102,7 +102,9 @@ function validarPass() {
     
 }
   
-
+function closeCrearUsuario(){
+    window.location.href = 'login.html';
+}
 
 function loginOK() {    
     coleccionLocal = JSON.parse(localStorage.getItem("list"));
