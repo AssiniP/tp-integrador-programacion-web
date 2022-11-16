@@ -32,7 +32,6 @@
 	function ListDireccion(){
 		document.getElementById('tblDireccion').innerHTML ="";
 		var datos =" ";
-		//datos += "<table>" ;
 		datos += "<thead>";
 		datos +=	"<tr>";
 	
@@ -54,9 +53,7 @@
 			
 		}
 		datos +="</tbody>";
-		//datos += "</table>";
 	document.getElementById('tblDireccion').innerHTML =datos;
-	console.log('entro en el ListDireccion')
 	
 	}
 
@@ -64,7 +61,6 @@
 	function ListPago(){
 		document.getElementById('tblPago').innerHTML ="";
 		var datos =" ";
-		//datos += "<table>" ;
 		datos += "<thead>";
 		datos +=	"<tr>";
 	
@@ -84,9 +80,7 @@
 			
 		}
 		datos +="</tbody>";
-		//datos += "</table>";
 	document.getElementById('tblPago').innerHTML =datos;
-	console.log('entro en el ListPago')
 	
 	}
 
