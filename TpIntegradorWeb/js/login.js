@@ -17,24 +17,6 @@ const botonLogin=document.getElementById('btn-login');
 let coleccionLocal = [];
 let menssajeError="";
 
-// escucha el evento click de guardad en crearusuario.html
-//guardar.addEventListener("click",(e)=>{
-//    validarPass();
-  //  if(valido){
- //       validarEmail();
- //       if (valido){
- //           agregarAColeccion();
- //       } else{
-//            document.querySelector(".mensajeError").innerHTML = mensajeDeError;
-//
-  //      }
-    //}
-   // document.querySelector(".mensajeError").innerHTML = mensajeDeError;
-   
-//});
-//
-
-
 
 
 function accionBotonlogin(){
@@ -62,19 +44,6 @@ function agregarAColeccion() {
     localStorage.setItem("list", JSON.stringify(coleccionLocal));
 }
 
-// function validarEmail(event) {
-// //    agregarAColeccion();
-//     localStorage.setItem("list", JSON.stringify(coleccionLocal));
-//     valido = false;
-//     if(expReg.test(email.value)){
-        
-//         valido =true;
-//     }else {
-//        alert("Email no valido: " + email.value);
-//        e.defaultPrevented();
-//     }
-//     return valido;
-// }
 
 function validarPass() {
     let ps= document.querySelector("#password");
