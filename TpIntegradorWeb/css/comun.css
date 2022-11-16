@@ -212,13 +212,14 @@ footer{
     font-family: 'Manrope', sans-serif
 }
 .logo-empresa{
-    max-width: 30%;
+    max-width: 100%;
+    height: auto;
 }
 .logo-footer{
    max-width: 14%;
 }
 #logo_pagina{
-   font-size: 0.3em;
+   width: 12%;
 }
 .icono{
     width: 10%;
