@@ -45,13 +45,13 @@ function cargarContadorCarrito() {
 
 function AddCar(producto,cantidad, precio) {
 	let cantidadDelProducto = document.getElementById(String(producto)).value;
-	console.log(cantidadDelProducto)
+	
 	if (cantidadDelProducto > 99) {
 		cantidadDelProducto = 99;
 		document.getElementById(String(producto)).value = 99;
 	}
 	let precioTotal = parseInt(precio) * cantidadDelProducto;
-	console.log(precioTotal)
+	
 
 	var car = JSON.stringify({
 		Producto: producto,
@@ -104,7 +104,7 @@ try{
     const checkboxTarjeta = document.getElementById("checkTarjeta")    
     checkboxTarjeta.addEventListener("change", (e) => {
         let nuevaTarjeta = document.querySelector(".nueva-tarjeta")
-        console.log(nuevaTarjeta)
+        
         estadoDelPopup(nuevaTarjeta);
     })
 
