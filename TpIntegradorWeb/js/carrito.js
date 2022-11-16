@@ -1,7 +1,3 @@
-
-
-
-// ---------------------------------------------------------------
 var selected_index = -1; //Index de seleccion ListCar item
 
 var dataCars = localStorage.getItem("dataCars");//carga los datos del stored data
@@ -71,7 +67,6 @@ function AddCar(producto,cantidad, precio) {
 	dataCars.push(car);
 	localStorage.setItem("dataCars", JSON.stringify(dataCars));
 	cargarContadorCarrito();
-	ListCar();
 	return true;
 }
 
