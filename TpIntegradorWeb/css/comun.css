@@ -138,6 +138,7 @@ p{
 }
 
 #lupa, #cruz{
+  background-color: white;
   position: absolute;
   bottom: 1em;
   right: 1em;
@@ -156,7 +157,7 @@ p{
 
 nav{
     background-color:  #85def2;
-    border-bottom: #E09DF2 1px solid;
+    /*border-bottom: #E09DF2 1px solid;*/
 }
 nav a{
     text-decoration:none;
@@ -167,6 +168,8 @@ nav a{
 nav ul{
     display: flex;
     list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 nav li{

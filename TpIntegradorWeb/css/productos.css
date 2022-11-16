@@ -171,11 +171,13 @@
     align-content: center;
 }
 .productos_mas_vendidos-carrusel{
-    display: flex;
+    padding-left: 38%;
+    padding-right: 35%;
+    /*display: flex;
     align-content: center;
     padding-left: 40%;
     padding-bottom: 3%;
-    padding-top: 3%;
+    padding-top: 3%;*/
 }
 
 .info_del_producto-carrusel{
