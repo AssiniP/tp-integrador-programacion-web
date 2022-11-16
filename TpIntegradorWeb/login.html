@@ -17,16 +17,20 @@
             <div class="imgcontainer">
               <img src="img/logo_empresa.png" alt="Avatar" class="logo-empresa" />
             </div>
-      
             <div class="container-usuario">
               <label for="uname"><b>Usuario</b></label>
               <input  type="text" placeholder="Ingrese el Usuario" name="user-login" id="user-login"  onchange="accionBotonlogin()"   />
               <label for="psw"><b>Constraseña</b></label>
               <input  type="password" placeholder="Ingrese la Constraseña" name="password-login"  id="password-login" onchange="accionBotonlogin()" />
-              <input type="button" class="btn-login popup-button" name="Conectar" id="btn-login" value="Conectar" disabled onclick="loginOK()">
+              <div class="botonPagarPrincipal">
+                <input type="button" class="btn-login popup-button" name="Conectar" id="btn-login" value="Conectar" disabled onclick="loginOK()">
+              </div>
+              
               <p class="mensajeError"></p>
             </div>
+      
             
+            <div class="container-bontones-login"> 
               <span class="psw">Olvidaste la <a href="#">contraseña?</a></span>
               <span class="registro">No tenes cuenta? 
               <a href="crearusuario.html">registrate.</a></span>
