@@ -76,14 +76,21 @@ function closeCrearUsuario(){
 }
 
 function loginOK() {    
+    menssajeError="";
     coleccionLocal = JSON.parse(localStorage.getItem("list"));
-    coleccionLocal.forEach(element => {
-        if(element.usuario == userLogin.value && element.pass == passwordLogin.value){
-            window.location.href = 'miCuenta.html';
-        }else {
-            menssajeError += "<p>El usuario o la contraseña es incorrecto, vuelva a intentarlo </p>";
-            document.querySelector(".mensajeError").innerHTML = menssajeError;
-        }
-    });
+    if (coleccionLocal!=null) {
+        coleccionLocal.forEach(element => {
+            if(element.usuario == userLogin.value && element.pass == passwordLogin.value){
+                window.location.href = 'miCuenta.html';
+            }else {
+                menssajeError += "<p>El usuario o la contraseña es incorrecto, vuelva a intentarlo </p>";
+                document.querySelector(".mensajeError").innerHTML = menssajeError;
+            }
+        });
+    }else{
+        menssajeError += "<p>El usuario o la contraseña es incorrecto, vuelva a intentarlo </p>";
+        document.querySelector(".mensajeError").innerHTML = menssajeError;
+    }
+    
 }
 

@@ -1,4 +1,10 @@
 
+	
+	var coleccionLocal = localStorage.getItem("list");//carga los datos del stored data
+
+    coleccionLocal = JSON.parse(coleccionLocal); //convierte el string en objeto
+
+	// ---------------------------
 	var selec_dire_index = -1; //Index de seleccion ListDireccion item
 
     var dataDireccion = localStorage.getItem("dataDireccion");//carga los datos del stored data
@@ -23,10 +29,23 @@
 		
 		if(dataCars == null) //si no es data, inicializa el array vacio
 		dataCars = [];
+	
+	function CargaNombrePerfilUsuario(){
+		if (coleccionLocal==null){
+			document.getElementById('nombre-perfil-usuario').innerHTML="Usuario no logueado. Logueese";
+			localStorage.clear();
+		} else{
+			coleccionLocal.forEach(element => {
+					document.getElementById('nombre-perfil-usuario').innerHTML="Hola, "+element.nombre+" "+element.apellido;
+					
+			});
+		}
+	}
 
     function ListAmbas(){
         ListDireccion();
         ListPago();
+		CargaNombrePerfilUsuario();
         document.getElementById('contadorCarrito').innerHTML=dataCars.length;
     }
 	function ListDireccion(){
