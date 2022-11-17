@@ -139,6 +139,13 @@ try{
         estadoDelPopup(nuevaTarjeta);
     })
 
+	const checkDireccionPago = document.getElementById("check-direccion-de-pago")
+	checkDireccionPago.addEventListener("change", (e)=>{
+		let nuevaDireccion = document.querySelector(".nueva-direccion")
+		
+		estadoDelPopup(nuevaDireccion);
+	})
+
 }
 catch{
 

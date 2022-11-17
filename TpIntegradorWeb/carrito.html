@@ -74,7 +74,7 @@
           <br />
           <label
             >Otra Tarjeta
-            <input type="checkbox" id="checkTarjeta" value="first_checkbox"
+            <input type="checkbox" name="nueva-tarjeta" id="checkTarjeta" value="first_checkbox"
           /></label>
 
           <div class="nueva-tarjeta oculto">
@@ -100,8 +100,102 @@
 
           <label for="direccion-de-pago"
             >Otra direccion
-            <input type="checkbox" name="direccion-de-pago" id="direccion-de-pago" />
+            <input type="checkbox" name="direccion-de-pago" id="check-direccion-de-pago" />
           </label>
+
+          <div class="nueva-direccion oculto">
+              <form
+                class="formularioLogin"
+                action=""
+                method="post"
+                id="formularioDireccion"
+              >
+                <p class="loginOrdenado">Alias:</p>
+                <input
+                  type="text"
+                  name="alias"
+                  clas="alias-dire"
+                  id="alias-dire"
+                  placeholder="Alias"
+                  value=""
+                  required
+                />
+                <br />
+                <label for="provincia">Provincia</label>
+                <select id="provincia" name="provincia">
+                  <option value="0">-- seleccionar --</option>
+                  <option value="1">BUENOS AIRES</option>
+                  <option value="2">CATAMARCA</option>
+                  <option value="5">CHACO</option>
+                  <option value="6">CHUBUT</option>
+                  <option value="50">CIUDAD AUTONOMA DE Bs As</option>
+                  <option value="3">CORDOBA</option>
+                  <option value="4">CORRIENTES</option>
+                  <option value="7">ENTRE RIOS</option>
+                  <option value="8">FORMOSA</option>
+                  <option value="9">JUJUY</option>
+                  <option value="10">LA PAMPA</option>
+                  <option value="11">LA RIOJA</option>
+                  <option value="12">MENDOZA</option>
+                  <option value="13">MISIONES</option>
+                  <option value="14">NEUQUEN</option>
+                  <option value="15">RIO NEGRO</option>
+                  <option value="16">SALTA</option>
+                  <option value="17">SAN LUIS</option>
+                  <option value="19">SANTA CRUZ</option>
+                  <option value="20">SANTA FE</option>
+                  <option value="21">SANTIAGO DEL ESTERO</option>
+                  <option value="22">TIERRA DEL FUEGO</option>
+                </select>
+                <br />
+                <label for="localidad">Localidad</label>
+                <select id="localidad" name="localidad">
+                  <option value="1">-- seleccionar --</option>
+                  <option value="2">San Martin</option>
+                  <option value="3">Morón</option>
+                  <option value="4">Merlo</option>
+                </select>
+                <br />
+                <p class="loginOrdenado">Direccion:</p>
+                <input
+                  type="text"
+                  name="direccion"
+                  class="direccion"
+                  id="direccion"
+                  placeholder="Direccion"
+                  value=""
+                  required
+                />
+                <br />
+                <p class="loginOrdenado">Telefono:</p>
+                <input
+                  type="text"
+                  name="telefono"
+                  class="telefono"
+                  id="telefono"
+                  placeholder="Telefono"
+                  value=""
+                />
+                <br />
+                <p class="loginOrdenado">Piso:</p>
+                <input
+                  type="text"
+                  name="piso"
+                  class="piso"
+                  id="piso"
+                  placeholder="Piso"
+                  value=""
+                />
+                <p class="loginOrdenado pisoDto">Dto:</p>
+                <input
+                  type="text"
+                  name="dto"
+                  class="dto"
+                  id="dto"
+                  placeholder="Dto"
+                  value=""
+                />
+          </div>
 
           <div class="popup-button">
             <input type="submit" value="pagar" />
