@@ -7,14 +7,6 @@
 }
 
 
-.categorias_de_productos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    bottom: 10%;
-    padding: 1em;
-}
 
 
 .categorias_de_productos h2{
@@ -66,13 +58,7 @@
     height: 20%;
 }
 
-/*  Contenedor producto_mas_vendidos*/
-.productos_mas_vendidos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    padding: 1em;
-}
+
 
 .productos_mas_vendidos h2{
     padding: 1.2em 1em;
@@ -172,11 +158,6 @@
 .productos_mas_vendidos-carrusel{
     padding-left: 38%;
     padding-right: 35%;
-    /*display: flex;
-    align-content: center;
-    padding-left: 40%;
-    padding-bottom: 3%;
-    padding-top: 3%;*/
 }
 
 .info_del_producto-carrusel{
@@ -187,4 +168,43 @@
     padding: 0.6em 1em;
     top: 85%;
     text-align: left;
+}
+
+    /*  Contenedor producto_mas_vendidos*/
+.productos_mas_vendidos{
+    display: flex;
+    flex-direction: wrap;
+    justify-content:space-around;
+    padding: 1em;
+}
+.categorias_de_productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 10%;
+    padding: 1em;
+}
+
+
+@media screen and (max-width: 600px){
+/*  Contenedor producto_mas_vendidos*/
+.productos_mas_vendidos{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.categorias_de_productos{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    bottom: 10%;
+    padding: 1em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 }
