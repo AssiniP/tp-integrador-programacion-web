@@ -173,7 +173,8 @@
     /*  Contenedor producto_mas_vendidos*/
 .productos_mas_vendidos{
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content:space-around;
     padding: 1em;
 }
@@ -187,7 +188,7 @@
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and  ( (max-width: 600px) or (max-width: 360)) {
 /*  Contenedor producto_mas_vendidos*/
 .productos_mas_vendidos{
     display: flex;
