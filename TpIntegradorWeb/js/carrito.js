@@ -16,9 +16,10 @@ function cargarComboTarjetas(){
 	dataPago = [];
 	for(var i in dataPago){
 		var cli = JSON.parse(dataPago[i]);
-		
-		alert(( parseInt(i)+ 2 ) +"  "+ cli.Alias)
-		comboPagos.innerHTML += "option value='"+(parseInt(i)+2)+"'>"+cli.Alias+"</option>";
+		var option=document.createElement("option");
+		option.value=String(parseInt(i)+ 2 );
+		option.text=cli.Alias;
+		comboPagos.appendChild(option);
 	}
 }
 
@@ -31,8 +32,10 @@ function cargarComboDirecciones(){
         dataDireccion = [];
 	for(var i in dataDireccion){
 		var cli = JSON.parse(dataDireccion[i]);
-		alert(( parseInt(i)+ 2 ) +"  "+ cli.Alias)
-		comboDirecciones.innerHTML += "option value='"+(parseInt(i)+2)+"'>"+cli.Alias+"</option>";
+		var option=document.createElement("option");
+		option.value=String(parseInt(i)+ 2 );
+		option.text=cli.Alias;
+		comboDirecciones.appendChild(option);
 	}
 }
 
