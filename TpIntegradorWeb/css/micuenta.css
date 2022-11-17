@@ -91,6 +91,7 @@ table {
 	border-collapse: collapse;
 	width: 70%;
 	margin-left:15%;
+	margin-bottom: 2%;
 	
 
 }
@@ -119,4 +120,17 @@ td {
 
 main a {
 	background-image: url(../img/CocinaN/fondo.jpg);
+}
+
+@media screen and  ( (max-width: 600px) or (max-width: 360)) {
+ 
+	table{
+		margin-top: 5%;
+		margin-bottom: 2%;
+	}
+
+	.nombreApellido{
+		
+		padding: 3em 1em;
+	}
 }

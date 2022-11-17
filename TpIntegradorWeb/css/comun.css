@@ -178,6 +178,7 @@ nav a{
     text-decoration:none;
     color: #2c2727;
     display: block;
+    text-align: center;
     }
 
 nav ul{
@@ -383,9 +384,7 @@ footer{
     width: 50%;
   }
 
-  #logo_pagina{
-    width: 15%;
-  }
+ 
 
   #contadorCarrito{
     bottom: 2em;

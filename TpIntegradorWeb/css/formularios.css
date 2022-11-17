@@ -176,3 +176,15 @@ form {
 	margin-top: 1em;
 	margin-bottom: 1em;	
 }
+
+@media screen and  ( (max-width: 600px) or (max-width: 360)) {
+.form-login{
+	margin-top: 50%;
+}
+.formulario-login{
+	margin-top: 30%;
+}
+#logo_pagina{
+    width: 30%;
+  }
+}

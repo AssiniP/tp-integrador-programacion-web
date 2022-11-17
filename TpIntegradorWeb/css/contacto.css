@@ -56,7 +56,7 @@
 }
 
 .contacto-mapa{
-	padding: 1em;
+	/* padding: 1em; */
     flex-basis: 100%;
     text-align: center;
 	align-items: center;
@@ -68,6 +68,7 @@
 	border-radius: 0.2em;
 	background-image: url(../img/CocinaN/fondo.jpg);
 	background-color: rgb(255, 194, 144);
+	width: 80%;
 }
 
 .ubicacion h3{
@@ -113,4 +114,24 @@
 .formulario input[type="submit"]:hover {
 
 }
-  
+
+iframe{
+	width: -webkit-fill-available;
+}
+
+@media screen and  ( (max-width: 600px) or (max-width: 360)) {
+
+	.informacion-contacto{
+		width: 40%;
+		font-size: 90%;
+	}
+	.ubicacion{
+		width: 80%;
+	}
+
+}
+
+
+
+/* width="600" */
+/* height="450" */

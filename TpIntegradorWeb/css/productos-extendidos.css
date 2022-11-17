@@ -78,4 +78,31 @@
     bottom:5%;
     right: 10%;
 }
+@media screen and  ( (max-width: 600px) or (max-width: 360)) {
 
+
+    .titulo_del_producto{
+       top: 0%;
+       right: auto;
+    }
+
+    .imagen-producto-destacado-info{
+        position: relative;
+        height: auto;
+        border-radius: 20%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        /* max-width: 40%; */
+                
+    }
+
+    .info_del_producto_destacado{
+        bottom: 0%;
+        
+    }
+    .productos_mas_vendidos-carrusel {
+        padding-left: 23%;
+    }
+
+
+}
