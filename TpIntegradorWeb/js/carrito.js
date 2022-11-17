@@ -17,8 +17,8 @@ function cargarComboTarjetas(){
 	for(var i in dataPago){
 		var cli = JSON.parse(dataPago[i]);
 		
-		alert(cli.Alias)
-		comboPagos.innerHTML+="option value='"+(i+2)+"'>"+cli.Alias+"</option>";
+		alert(( parseInt(i)+ 2 ) +"  "+ cli.Alias)
+		comboPagos.innerHTML += "option value='"+(parseInt(i)+2)+"'>"+cli.Alias+"</option>";
 	}
 }
 
@@ -31,8 +31,8 @@ function cargarComboDirecciones(){
         dataDireccion = [];
 	for(var i in dataDireccion){
 		var cli = JSON.parse(dataDireccion[i]);
-		alert(cli.Alias)
-		comboDirecciones.innerHTML+="option value='"+(i+2)+"'>"+cli.Alias+"</option>";
+		alert(( parseInt(i)+ 2 ) +"  "+ cli.Alias)
+		comboDirecciones.innerHTML += "option value='"+(parseInt(i)+2)+"'>"+cli.Alias+"</option>";
 	}
 }
 
