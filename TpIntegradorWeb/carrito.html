@@ -68,10 +68,8 @@
           <h2>Pagar</h2>
 
           <label for="tarjetas">Tarjetas guardadas</label>
-          <select id="tarjetas" name="tarjetas">
+          <select id="combo-tarjetas" name="tarjetas" class="tarjetas">
             <option value="1">-- seleccionar --</option>
-            <option value="2">Visa Debito</option>
-            <option value="3">Lemon Cash</option>
           </select>
           <br />
           <label
@@ -81,55 +79,22 @@
 
           <div class="nueva-tarjeta oculto">
             <p class="loginOrdenado">Numero de Tarjeta:</p>
-          <input
-            type="text"
-            name="nroTarjeta"
-            placeholder="Numero de Tarjeta"
-            id="nroTarjeta"
-            value=""
-            required
-          />
+          <input type="text" name="nroTarjeta" placeholder="Numero de Tarjeta" id="nroTarjeta" value="" required />
 
           <div class="datostarjeta">
             <p class="loginOrdenado">Codigo:</p>
-            <input
-              type="text"
-              name="codigo"
-              placeholder="Cdo"
-              id="codigoTarjeta"
-              value=""
-              class="codigoSeguridad"
-              required
-            />
+            <input  type="text" name="codigo" placeholder="Cdo" id="codigoTarjeta" value="" class="codigoSeguridad" required />
             <p class="loginOrdenado">Vencimiento:</p>
-            <input
-              type="text"
-              name="vto"
-              placeholder="Vto"
-              id="vencimientoTarjeta"
-              value=""
-              class="Vencimiento"
-              required
-            />
+            <input type="text" name="vto" placeholder="Vto" id="vencimientoTarjeta" value="" class="Vencimiento" required/>
           </div>
 
           <p class="loginOrdenado">Nombre Titular:</p>
-          <input
-            type="text"
-            name="nomtitular"
-            placeholder="Nombre Titular"
-            id="titularTarjeta"
-            value=""
-            class="nomDeTitular"
-            required
-          />
+          <input type="text" name="nomtitular" placeholder="Nombre Titular" id="titularTarjeta" value="" class="nomDeTitular" required  />
           </div>
 
-          <label for="tarjetas">Direcciones guardadas</label>
-          <select id="tarjetas" name="tarjetas">
+          <label for="direcciones">Direcciones guardadas</label>
+          <select id="combo-direcciones" name="direcciones" class="direcciones">
             <option value="1">-- seleccionar --</option>
-            <option value="2">Mi depto</option>
-            <option value="3">Casa de Mama</option>
           </select>
           <br />
 

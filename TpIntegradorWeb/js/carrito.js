@@ -8,9 +8,35 @@ if (dataCars == null) //si no es data, inicializa el array vacio
 	dataCars = [];
 
 
+function cargarComboTarjetas(){
+	comboPagos=document.getElementById('combo-tarjetas')
+	var dataPago = localStorage.getItem("dataPago");//carga los datos del stored data
+    dataPago = JSON.parse(dataPago); //convierte el string en objeto
+    if(dataPago == null) //si no es data, inicializa el array vacio
+	dataPago = [];
+	for(var i in dataPago){
+		var cli = JSON.parse(dataPago[i]);
+		
+		alert(cli.Alias)
+		comboPagos.innerHTML+="option value='"+(i+2)+"'>"+cli.Alias+"</option>";
+	}
+}
+
+
+function cargarComboDirecciones(){
+	comboDirecciones=document.getElementById('combo-direcciones')
+	var dataDireccion = localStorage.getItem("dataDireccion");//carga los datos del stored data
+    dataDireccion = JSON.parse(dataDireccion); //convierte el string en objeto
+    if(dataDireccion == null) //si no es data, inicializa el array vacio
+        dataDireccion = [];
+	for(var i in dataDireccion){
+		var cli = JSON.parse(dataDireccion[i]);
+		alert(cli.Alias)
+		comboDirecciones.innerHTML+="option value='"+(i+2)+"'>"+cli.Alias+"</option>";
+	}
+}
 
 function ListCar() {
-	//document.getElementById('tblList').innerHTML = "";
 	var datos = " ";
 	datos += "<thead>";
 	datos += "<tr>";
@@ -35,6 +61,8 @@ function ListCar() {
 	datos += "</tbody>";
 	document.getElementById('tblList').innerHTML = datos;
 	cargarContadorCarrito();
+	cargarComboDirecciones();
+	cargarComboTarjetas();
 
 }
 
