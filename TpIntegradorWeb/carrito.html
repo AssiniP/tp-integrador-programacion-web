@@ -59,17 +59,16 @@
           </table>
       </div>
       <div class="botonPagarPrincipal">
-        <input type="button" id="popPagar" value="Pagar"     onclick="pago()"        />
-       
+        <input type="button" id="popPagar" value="Pagar" onclick="pago()" />
       </div>
 
       <div class="popup-form oculto" id="intento">
-        <form class="formularioLogin" action="" method="post" id="formularioTarjeta">
+        <form class="formularioLogin" action="" method="post" id="formularioPago">
           <h2>Pagar</h2>
 
           <label for="tarjetas">Tarjetas guardadas</label>
           <select id="combo-tarjetas" name="tarjetas" class="tarjetas">
-            <option value="1">-- seleccionar --</option>
+            <option value="1" name="tarjeta">-- seleccionar --</option>
           </select>
           <br />
           <label
@@ -78,23 +77,22 @@
           /></label>
 
           <div class="nueva-tarjeta oculto">
-            <p class="loginOrdenado">Numero de Tarjeta:</p>
-          <input type="text" name="nroTarjeta" placeholder="Numero de Tarjeta" id="nroTarjeta" value="" required />
-
+          <p class="loginOrdenado">Numero de Tarjeta:</p>
+          <input type="text" name="nroTarjeta" placeholder="Numero de Tarjeta" id="nroTarjeta"/>
           <div class="datostarjeta">
             <p class="loginOrdenado">Codigo:</p>
-            <input  type="text" name="codigo" placeholder="Cdo" id="codigoTarjeta" value="" class="codigoSeguridad" required />
+            <input  type="text" name="codigo" placeholder="Cdo" id="codigoTarjeta" value="" class="codigoSeguridad"/>
             <p class="loginOrdenado">Vencimiento:</p>
-            <input type="text" name="vto" placeholder="Vto" id="vencimientoTarjeta" value="" class="Vencimiento" required/>
+            <input type="text" name="vto" placeholder="Vto" id="vencimientoTarjeta" value="" class="Vencimiento"/>
           </div>
 
           <p class="loginOrdenado">Nombre Titular:</p>
-          <input type="text" name="nomtitular" placeholder="Nombre Titular" id="titularTarjeta" value="" class="nomDeTitular" required  />
+          <input type="text" name="nomtitular" placeholder="Nombre Titular" id="titularTarjeta" value="" class="nomDeTitular" />
           </div>
 
           <label for="direcciones">Direcciones guardadas</label>
           <select id="combo-direcciones" name="direcciones" class="direcciones">
-            <option value="1">-- seleccionar --</option>
+            <option value="1" name="direccion">-- seleccionar --</option>
           </select>
           <br />
 
@@ -118,7 +116,6 @@
                   id="alias-dire"
                   placeholder="Alias"
                   value=""
-                  required
                 />
                 <br />
                 <label for="provincia">Provincia</label>
@@ -164,7 +161,6 @@
                   id="direccion"
                   placeholder="Direccion"
                   value=""
-                  required
                 />
                 <br />
                 <p class="loginOrdenado">Telefono:</p>

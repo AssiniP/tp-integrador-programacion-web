@@ -19,6 +19,7 @@ function cargarComboTarjetas(){
 		var option=document.createElement("option");
 		option.value=String(parseInt(i)+ 2 );
 		option.text=cli.Alias;
+		option.setAttribute("name", "tarjeta")
 		comboPagos.appendChild(option);
 	}
 }
@@ -35,6 +36,7 @@ function cargarComboDirecciones(){
 		var option=document.createElement("option");
 		option.value=String(parseInt(i)+ 2 );
 		option.text=cli.Alias;
+		option.setAttribute("name", "direccion")
 		comboDirecciones.appendChild(option);
 	}
 }
@@ -129,20 +131,122 @@ function estadoDelPopup(popup) {
 	}
 }
 
+const formularioPago = document.getElementById("formularioPago")
+
+formularioPago.addEventListener("submit", (e)=>{
+	e.preventDefault();
+	validarTarjetaYDireccion();
+})
+
+function validarTarjetaYDireccion(){
+	let tarjetaSeleccionada = document.getElementById("combo-tarjetas").value;
+	console.log(tarjetaSeleccionada)
+	let direccionSeleccionada = document.getElementById("combo-direcciones").value;
+	switch (tarjetaSeleccionada) {
+		case '1':
+			const checkboxTarjeta = document.getElementById("checkTarjeta").checked;
+			console.log(checkboxTarjeta)
+			if(checkboxTarjeta == true && direccionSeleccionada != 1){
+				validarTarjeta();
+			} else if(checkboxTarjeta == false && direccionSeleccionada == 1){
+				document.querySelector(".mensajeError").innerHTML = "<p>Seleccione o ingrese una tarjeta <br> Seleccione o ingrese una direccion</p>"
+			} else if(checkboxTarjeta == true && direccionSeleccionada == 1){
+				document.querySelector(".mensajeError").innerHTML = "<p>Seleccione o ingrese una direccion</p>"
+			} else{
+				document.querySelector(".mensajeError").innerHTML = "<p>Seleccione o ingrese una tarjeta </p>"
+			}
+			break;
+		default:
+			const checkboxDireccion = document.getElementById("check-direccion-de-pago").checked;
+			if(direccionSeleccionada == 1 && checkboxDireccion == false){
+				document.querySelector(".mensajeError").innerHTML = "<p>Seleccione o ingrese una direccion</p>"
+			} else if(direccionSeleccionada == 1 && checkboxDireccion == true){
+				validarDireccionCarrito();
+			} else{
+				formularioPago.submit();
+			}
+			break;
+	}
+}
+
+function validarDireccionCarrito(){
+	let aliasDeAliasDire = document.querySelector("#alias-dire").value;
+    let aliasDeDireccion = document.querySelector("#direccion").value;
+	if(aliasDeAliasDire != "" && aliasDeDireccion != ""){
+		formularioPago.submit();
+	} else{
+		document.querySelector(".mensajeError").innerHTML = "<p>Ingrese como minimo alias y direccion</p>";
+	}
+}
+
+function validarTarjeta(){
+	let regexNroTarjeta = /^[0-9]{10}$/;
+	let error = false;
+    let mensajeDeError = "";
+    let numeroDeTarjeta = document.querySelector("#nroTarjeta").value;
+	console.log(numeroDeTarjeta)
+    let ultimoDigito = numeroDeTarjeta.charAt(9);
+	let direccionSeleccionada = document.getElementById("combo-direcciones").value;
+
+    if (!regexNroTarjeta.test(numeroDeTarjeta)) {
+        error = true;
+        mensajeDeError += "<p> La tarjeta debe tener 10 digitos </p>"
+    }
+
+    let resultadoDeLaSumatoria = calcularSiLaSumatoriaDeNumerosEsParOImpar(numeroDeTarjeta);
+    let resultadoDelUltimoNumero = calcularSiEsUnNumeroParOImpar(ultimoDigito);
+
+    if (resultadoDeLaSumatoria == resultadoDelUltimoNumero) {
+        error = true;
+        mensajeDeError += "<br><p> Numero de tarjeta inválida</p>"
+    }
+
+    if (numeroDeTarjeta == "0000000000") {
+        error = true;
+        mensajeDeError += "<br><p> Numero de tarjeta no puede ser 0000000000</p>"
+    }
+
+	console.log(error)
+
+    if (error == true && direccionSeleccionada == 1) {
+		mensajeDeError += "<p>Seleccione o ingrese una direccion</p>"
+        document.querySelector(".mensajeError").innerHTML = mensajeDeError;
+    } else if(error == true && direccionSeleccionada != 1){
+		document.querySelector(".mensajeError").innerHTML = mensajeDeError;
+	}
+	else if(error == false && direccionSeleccionada == 1) {
+		document.querySelector(".mensajeError").innerHTML = "<p>Seleccione o ingrese una direccion</p>";
+    } else{
+		formularioPago.submit();
+	}
+}
+
+function calcularSiLaSumatoriaDeNumerosEsParOImpar(numeroDeTarjeta) {
+    let sumatoria = 0;
+    for (let i = 0; i < numeroDeTarjeta.length-1; i++) {
+        sumatoria += parseInt(numeroDeTarjeta.charAt(i))
+    }
+    let resultado = calcularSiEsUnNumeroParOImpar(sumatoria)
+    return resultado;
+}
+
+function calcularSiEsUnNumeroParOImpar(numero) {
+    let resultado = ((numero % 2) + 2) % 2;
+    console.log(resultado)
+    return resultado;
+}
 
 //tarjeta
 try{
     const checkboxTarjeta = document.getElementById("checkTarjeta")    
     checkboxTarjeta.addEventListener("change", (e) => {
-        let nuevaTarjeta = document.querySelector(".nueva-tarjeta")
-        
+        let nuevaTarjeta = document.querySelector(".nueva-tarjeta")  
         estadoDelPopup(nuevaTarjeta);
     })
 
 	const checkDireccionPago = document.getElementById("check-direccion-de-pago")
 	checkDireccionPago.addEventListener("change", (e)=>{
 		let nuevaDireccion = document.querySelector(".nueva-direccion")
-		
 		estadoDelPopup(nuevaDireccion);
 	})
 

@@ -2,13 +2,13 @@ const regexNroTarjeta = /^[0-9]{10}$/;
 const formularioTarjeta = document.querySelector("#formularioTarjeta");
 const formularioDireccion = document.querySelector("#formularioDireccion");
 
-formularioTarjeta.addEventListener("submit", (e) => {
-    e.preventDefault();
-    validarCamposDelFormulario();
-})
-
 try {
-formularioDireccion.addEventListener("submit", (e) => {
+    formularioTarjeta.addEventListener("submit", (e) => {
+        e.preventDefault();
+        validarCamposDelFormulario();
+    })
+
+    formularioDireccion.addEventListener("submit", (e) => {
     e.preventDefault();
     validarDatosDireccion();
 })
@@ -96,6 +96,3 @@ function estadoDelPopup(popup) {
         popup.classList.add("oculto")
     }
 }
-
-
-
