@@ -240,12 +240,14 @@
 
 @media screen and  ( (max-width: 600px) or (max-width: 360)) {
 .productos_mas_vendidos{
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
     justify-content:center;
     padding: 1em;
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 20%;*/
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
 }
 .categorias_de_productos{
     display: flex;
@@ -253,6 +255,18 @@
     padding: 1em;
     font-size: 1.3em;
     align-content: center;
+}
+
+.producto_individual_mas_vendidos{
+    width: 80%;
+}
+
+.descripcion-producto{
+    top: 40%;
+}
+
+.precio_del_producto{
+    left: 1.5em;
 }
 
 }
