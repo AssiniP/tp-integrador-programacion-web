@@ -137,12 +137,10 @@ const formularioPago = document.getElementById("formularioPago")
 
 function validarTarjetaYDireccion(){
 	let tarjetaSeleccionada = document.getElementById("combo-tarjetas").value;
-	console.log(tarjetaSeleccionada)
 	let direccionSeleccionada = document.getElementById("combo-direcciones").value;
 	switch (tarjetaSeleccionada) {
 		case '1':
 			const checkboxTarjeta = document.getElementById("checkTarjeta").checked;
-			console.log(checkboxTarjeta)
 			if(checkboxTarjeta == true && direccionSeleccionada != 1){
 				validarTarjeta();
 			} else if(checkboxTarjeta == false && direccionSeleccionada == 1){
@@ -181,7 +179,6 @@ function validarTarjeta(){
 	let error = false;
     let mensajeDeError = "";
     let numeroDeTarjeta = document.querySelector("#nroTarjeta").value;
-	console.log(numeroDeTarjeta)
     let ultimoDigito = numeroDeTarjeta.charAt(9);
 	let direccionSeleccionada = document.getElementById("combo-direcciones").value;
 
@@ -229,7 +226,6 @@ function calcularSiLaSumatoriaDeNumerosEsParOImpar(numeroDeTarjeta) {
 
 function calcularSiEsUnNumeroParOImpar(numero) {
     let resultado = ((numero % 2) + 2) % 2;
-    console.log(resultado)
     return resultado;
 }
 
