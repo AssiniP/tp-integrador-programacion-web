@@ -1,8 +1,13 @@
 .imagen-producto-destacado-info{
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     border-radius: 5em;
 }
+
+.imagen_producto_destacado{
+    width: 100%;
+}
+
 
 .boton_del_carrito{
     position: absolute;
@@ -39,7 +44,7 @@
 
 .titulo_del_producto{
     position: absolute;
-    top: 2em;
+    top: 1em;
     right: 3em;
 }
 
@@ -78,6 +83,8 @@
     bottom:5%;
     right: 10%;
 }
+
+
 @media screen and  ( (max-width: 600px) or (max-width: 360)) {
 
 

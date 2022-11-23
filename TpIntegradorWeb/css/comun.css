@@ -423,15 +423,16 @@ footer{
     font-size: 1em;
   }
   #info_tienda{
-    width: 60%;
+    width: 40%;
     position: relative;
   }
   .logo-footer{
     position: absolute;
-    max-width: 30%;
+    max-width: 32%;
     top: 0;
     bottom: 0;
     right: 0;
+    left: 110%;
     margin: auto;
   }
   #datos_del_grupo{
