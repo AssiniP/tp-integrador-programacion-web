@@ -133,4 +133,12 @@ main a {
 		
 		padding: 3em 1em;
 	}
+
+	.containe-button{
+		width: 0;
+	}
+	.titulo-carrito{
+		padding-left: 45ex;
+		text-align: end;
+	}
 }
