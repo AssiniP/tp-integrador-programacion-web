@@ -19,6 +19,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+	margin-bottom: 2%;
 	padding: 1em;
 	border-radius: 0.2em;
 	font-family: 'Open Sans', sans-serif;
@@ -117,6 +118,7 @@
 
 iframe{
 	width: -webkit-fill-available;
+	height: -webkit-fill-available;
 }
 
 @media screen and  ( (max-width: 600px) or (max-width: 360)) {
@@ -124,9 +126,17 @@ iframe{
 	.informacion-contacto{
 		width: 40%;
 		font-size: 90%;
+		margin-bottom: 2%;
 	}
 	.ubicacion{
 		width: 80%;
+	}
+	.contenedor-formulario{
+		margin-bottom: 2%;
+		width: 80%;
+	}
+	.contacto-mensaje h2{
+		text-align: center;
 	}
 
 }
