@@ -266,7 +266,7 @@
 }
 
 .precio_del_producto{
-    left: 1.5em;
+    left: 2em;
 }
 
 }
@@ -274,22 +274,54 @@
 @media screen and (min-width: 600px) and (max-width: 992px){
     .categorias_de_productos{
         bottom: 0;
-
         justify-content: space-evenly;
         align-items: flex-start;
         align-content: space-around;
-        padding: 0;
+        row-gap: 2em;
+        padding: 1em;
+        /*padding: 2em;
+        row-gap: 7em;
+        padding-bottom: 10%;*/
     }
 
     .categorias_de_productos h2{
         padding: 0.2em 0;
         height: fit-content;
-        font-size: 2.8em;
+        font-size: 3em;
     }
 
     .producto_individual{
-        flex-basis: 30%;
-        font-size: 1.2em;
+        flex-basis: 33%;
+        font-size: 1.3em;
         padding: 0.5em;
     }
+
+    .producto_individual_mas_vendidos{
+        flex-basis: 45%;
+        width: 100%;
+    }
+
+    .info_del_producto{
+        font-size: 1.6em;
+    }
+
+    .boton_del_carrito{
+        bottom: 2em;
+        right: 0.4em;
+    }
+    .input-producto{
+        width: 60%;
+        font-size: 0.8em;
+    }
+
+    .precio_del_producto{
+        font-size: 2em;
+        left: 1em;
+        bottom: 1.4em;
+    }
+
+    .descripcion-producto{
+        top: 40%;
+    }
+
 }
