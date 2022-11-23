@@ -110,7 +110,6 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column
-
 }
 
 main{
@@ -236,7 +235,7 @@ footer{
 }
 #carrito{
     text-decoration: none;
-    font-size: 2.2em;
+    font-size: 2.5em;
     color: #2c2727;
 }
 
@@ -249,7 +248,7 @@ footer{
 
 #login-usuario{
   text-decoration: none;
-    font-size: 2.2em;
+    font-size: 3em;
     color: #2c2727;
 }
 
@@ -274,8 +273,9 @@ footer{
 .icon-reloj{
     font-size: 1.5em;
     color: #2c2727;
-    /* position: absolute; */
-    right: 210px;
+    position: absolute;
+    bottom: 1em;
+    left: -1.3em;
 }
 
 #info_tienda{
@@ -301,8 +301,8 @@ footer{
 
 .contadorCarrito{
   position:absolute;
-  bottom: 2em;
-  left: 2em;
+  bottom: 2.3em;
+  left: 2.3em;
   width: 1.5em;
   height: 1.5em;
   text-align: center;
@@ -311,6 +311,11 @@ footer{
   font-size: large;
   font-weight: bold;
 }
+/*
+.contenedor-slider{
+  width: 1em;
+  height: 1m;
+}*/
 
 @media screen and  ( (max-width: 600px) or (max-width: 360)) {
   body{
@@ -352,6 +357,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     column-gap: 0.5em;
+    row-gap: 0.5em;
     font-size: 1.2em;
     text-align: center;
   }
@@ -361,9 +367,12 @@ footer{
   #info_tienda{
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
   }
   #datos_del_grupo{
+    display: none;
+  }
+  .icon-reloj{
     display: none;
   }
   .logo-footer{
@@ -384,7 +393,17 @@ footer{
     width: 50%;
   }
 
- 
+  nav ul{
+    font-size: 1.8em;
+  }
+
+  #login-usuario{
+    font-size: 5em;
+  }
+
+  .contenedor-carrito-contador{
+    font-size: 1.7em;
+  }
 
   #contadorCarrito{
     bottom: 2em;
@@ -392,24 +411,32 @@ footer{
     font-size: 0.5em;
   }
 
+  #logo_pagina{
+    width: 20%;
+  }
+
+  /*Footer*/
   footer{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    column-gap: 0.5em;
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
   #redes_sociales{
     font-size: 1em;
   }
   #info_tienda{
-    width: 50%;
+    width: 60%;
+    position: relative;
   }
   .logo-footer{
-    max-width: 20%;
+    position: absolute;
+    max-width: 30%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
   }
   #datos_del_grupo{
     display: none;
   }
   
 }
+

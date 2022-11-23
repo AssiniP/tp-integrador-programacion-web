@@ -75,7 +75,6 @@ function calcularSiLaSumatoriaDeNumerosEsParOImpar(numeroDeTarjeta) {
 
 function calcularSiEsUnNumeroParOImpar(numero) {
     let resultado = ((numero % 2) + 2) % 2;
-    console.log(resultado)
     return resultado;
 }
 

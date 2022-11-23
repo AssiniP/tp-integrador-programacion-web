@@ -133,10 +133,7 @@ function estadoDelPopup(popup) {
 
 const formularioPago = document.getElementById("formularioPago")
 
-formularioPago.addEventListener("submit", (e)=>{
-	e.preventDefault();
-	validarTarjetaYDireccion();
-})
+
 
 function validarTarjetaYDireccion(){
 	let tarjetaSeleccionada = document.getElementById("combo-tarjetas").value;
@@ -248,6 +245,11 @@ try{
 	checkDireccionPago.addEventListener("change", (e)=>{
 		let nuevaDireccion = document.querySelector(".nueva-direccion")
 		estadoDelPopup(nuevaDireccion);
+	})
+
+	formularioPago.addEventListener("submit", (e)=>{
+		e.preventDefault();
+		validarTarjetaYDireccion();
 	})
 
 }
